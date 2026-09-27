@@ -18,7 +18,7 @@
     - **Independent Execution**: Unabhängige Cores mit eigenem **Instruction Stream**.
     - **Konsequenz**: Sequenzieller Code profitiert nicht mehr; manuelle Parallelisierung (Threads/Tasks) zwingend.
 
-![02 Paradigmenwechsel|600](media/02_Paradigmenwechsel.png)
+<img src="media/02_Paradigmenwechsel.png" alt="02 Paradigmenwechsel" width="600">
 
 ## Memory Wall und Caching
 
@@ -74,4 +74,4 @@
     - **Lösung**: Aufteilung langsamer Stufen in feingranulare Sub-Stufen.
 - **Trade-off**: Pipelining maximiert **Throughput**, erhöht aber durch ständigen Übergabe-Overhead die **Latenz** eines einzelnen Durchlaufs.
 
-![02 Balanced Pipeline|600](media/02_Balanced_Pipeline.png)
+<img src="media/02_Balanced_Pipeline.png" alt="02 Balanced Pipeline" width="600">

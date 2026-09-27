@@ -36,7 +36,7 @@
 - **Limitierung ($p \to \infty$)**: Paralleler Rechenteil geht gegen Null. Obergrenze des Speedups: $S_\infty \leq \frac{1}{f}$.
 - **Fazit**: Reduktion des sequenziellen Codes extrem wertvoll (definiert maximal möglichen Speedup).
 
-![03 Amdahl's Law|600](media/03_Amdahl's_Law.png)
+<img src="media/03_Amdahl's_Law.png" alt="03 Amdahl's Law" width="600">
 
 ## Gustafson's Law (Optimistische Sicht)
 
@@ -46,4 +46,4 @@
 - **Formel**: $S_p = p - f(p - 1)$
 - **Fazit**: Speedup wächst annähernd linear mit Prozessoren-Anzahl $p$ (entspricht HPC-Praxis und Marketing-Versprechen).
 
-![03 Gustafson's Law|600](media/03_Gustafson's_Law.png)
+<img src="media/03_Gustafson's_Law.png" alt="03 Gustafson's Law" width="600">

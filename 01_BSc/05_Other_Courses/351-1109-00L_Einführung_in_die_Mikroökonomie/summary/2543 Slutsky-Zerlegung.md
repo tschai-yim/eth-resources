@@ -7,7 +7,7 @@
     - **Einkommenseffekt**: Reaktion auf geänderte **Kaufkraft** (reales Einkommen).
 - **Motivation**: Erklärt **Lenkungswirkung** einer **CO₂-Steuer trotz Rückvergütung**.
 
-![2543 Slutsky Komponenten|600](media/2543_Slutsky_Komponenten.png)
+<img src="media/2543_Slutsky_Komponenten.png" alt="2543 Slutsky Komponenten" width="600">
 
 ## Der Substitutionseffekt (SE)
 
@@ -59,22 +59,22 @@
     - Nachfragekurve hat **positive Steigung**; Gesetz der Nachfrage wird verletzt.
     - **Wichtig**: Ein **Giffen-Gut muss immer ein inferiores Gut sein**, aber nicht jedes inferiore Gut ist ein Giffen-Gut.
 
-![2543 Inferiore Güter|600](media/2543_Inferiore_Güter.png)
+<img src="media/2543_Inferiore_Güter.png" alt="2543 Inferiore Güter" width="600">
 
 ## Spezialfälle bei unterschiedlichen Präferenzen
 
 - **Perfekte Komplemente** (L-förmige Indifferenzkurven):
     - **Kein Substitutionseffekt** ($\Delta x_1^s = 0$); Güter werden nicht substituiert.
     - Gesamteffekt = **reiner Einkommenseffekt**.
-    ![2543 Perfekte Komplemente|500](media/2543_Perfekte_Komplemente.png)
+    <img src="media/2543_Perfekte_Komplemente.png" alt="2543 Perfekte Komplemente" width="500">
 - **Perfekte Substitute** (lineare Indifferenzkurven):
     - Preisänderung führt meist zu Randlösung (nur Konsum des günstigeren Guts).
     - Gesamteffekt = **Substitutionseffekt**; **Einkommenseffekt = 0** ($\Delta x_1^n = 0$).
-    ![2543 Perfekte Substitute|500](media/2543_Perfekte_Substitute.png)
+    <img src="media/2543_Perfekte_Substitute.png" alt="2543 Perfekte Substitute" width="500">
 - **Quasilineare Präferenzen**:
     - **EE** für das nicht-linear im Nutzen stehende Gut = **0**.
     - Gesamte Nachfrageänderung = **SE**.
-    ![2543 Quasilineare Präferenzen|500](media/2543_Quasilineare_Präferenzen.png)
+    <img src="media/2543_Quasilineare_Präferenzen.png" alt="2543 Quasilineare Präferenzen" width="500">
 
 ## Anwendung: Steuer mit Rückvergütung
 
@@ -86,4 +86,4 @@
     - Trotz Kompensation des EE durch Rückvergütung bleibt SE bestehen $\rightarrow$ **Verhaltensänderung** (z.B. Benzinkonsum sinkt).
     - Neues Optimum auf **niedrigerer Indifferenzkurve** $\rightarrow$ Konsument ist **schlechter gestellt**.
 
-![2543 Steuer mit Rückvergütung|600](media/2543_Steuer_mit_Rückvergütung.png)
+<img src="media/2543_Steuer_mit_Rückvergütung.png" alt="2543 Steuer mit Rückvergütung" width="600">

@@ -41,7 +41,7 @@
     - **Starvation Freedom (Fairness)**: Absolute Obergrenze (**`MAX_DELAY`**) zwingend, sonst verhungern Pechvögel.
     - **Resultat**: Sehr flache Performance-Kurve (exzellente Skalierung). Konzept weit verbreitet (WLAN, verteilte Systeme).
 
-![09 Spinlock Performance|600](media/09_Spinlock_Performance.png)
+<img src="media/09_Spinlock_Performance.png" alt="09 Spinlock Performance" width="600">
 
 ## Deadlocks (Verklemmungen)
 

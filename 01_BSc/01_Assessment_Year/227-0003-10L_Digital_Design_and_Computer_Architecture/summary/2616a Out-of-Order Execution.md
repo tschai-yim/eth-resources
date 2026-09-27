@@ -36,9 +36,9 @@
         - **Tag Broadcast & Wake-up**: Most power-hungry phase, typical critical path. Execution units broadcast tag/value on CDB. All RS and RAT entries simultaneously compare this tag.
     4. **Dispatch**: Wake up and select instruction for execution once all operands ready.
 
-![2616 Reservation Station Table|600](media/2616_Reservation_Station_Table.png)
+<img src="media/2616_Reservation_Station_Table.png" alt="2616 Reservation Station Table" width="600">
 
-![2616 Tomasulo Broadcast|600](media/2616_Tomasulo_Broadcast.png)
+<img src="media/2616_Tomasulo_Broadcast.png" alt="2616 Tomasulo Broadcast" width="600">
 
 ## OoO Execution with Precise Exceptions
 

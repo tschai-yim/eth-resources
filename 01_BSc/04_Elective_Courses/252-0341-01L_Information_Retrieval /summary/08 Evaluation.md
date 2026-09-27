@@ -43,7 +43,7 @@
 ## Ranked Evaluation Metrics
 
 - **Precision-Recall Curve**: Evaluates ranked lists by plotting $P$ and $R$ iteratively down the list.
-  ![08 Precision-Recall Curve|300](media/08_Precision-Recall_Curve.png)
+  <img src="media/08_Precision-Recall_Curve.png" alt="08 Precision-Recall Curve" width="300">
     - Retrieving **relevant**: Moves curve **up and right** ($P \uparrow, R \uparrow$).
     - Retrieving **irrelevant**: Moves curve **straight down** ($R$ stable, $P \downarrow$). Creates distinctive **saw-tooth shape**.
     - **Interpolated Precision**: Monotonically decreasing curve removing jiggles. $p_{interp}(r) = \max_{r' \ge r} p(r')$ (looks ahead to maximum precision at any future recall level).
@@ -63,7 +63,7 @@
     - **Sweet Spot**: Top-left corner (High sensitivity, low false positive rate).
     - **Hacking Awful Engines**: Completely inverted ROC curves (bottom-right edge) become awesome engines simply by reversing their boolean outputs.
 
-![08 ROC Curve|400](media/08_ROC_Curve.png)
+<img src="media/08_ROC_Curve.png" alt="08 ROC Curve" width="400">
 
 ## Advanced Metrics
 

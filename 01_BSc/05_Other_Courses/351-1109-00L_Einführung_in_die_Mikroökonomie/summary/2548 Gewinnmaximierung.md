@@ -16,7 +16,7 @@
 - **Grenzerlös ($MR$)**: Abhängig von **Nachfrageelastizität** ($e_{q,p}$).
     - Formel: $MR = p \cdot (1 + \frac{1}{e_{q,p}})$.
     - **Vollkommene Konkurrenz**: Nachfrage unendlich elastisch ($e_{q,p} \to -\infty$) $\to$ $MR = p$.
-      ![2548 Nachfragekurve bei Wettbewerb|600](media/2548_Nachfragekurve_bei_Wettbewerb.png)
+      <img src="media/2548_Nachfragekurve_bei_Wettbewerb.png" alt="2548 Nachfragekurve bei Wettbewerb" width="600">
 - **Lerner-Index**: Mass für **Marktmacht** (Markup über Grenzkosten).
     - Formel: $\frac{p - MC}{p} = -\frac{1}{e_{q,p}}$.
     - **Interpretation**: Je unelastischer die Nachfrage ($e_{q,p}$ nah bei 0), desto höher der mögliche Preisaufschlag.
@@ -63,7 +63,7 @@ Zwei äquivalente Wege zum **selben Ergebnis**:
     - Produktion nur, wenn Preis **variable Durchschnittskosten** deckt ($p \geq AVC$).
     - Falls $p < AVC$: Verlust > Fixkosten $\to$ Produktion einstellen ($q=0$).
     - **Angebotskurve**: Teil der $MC$-Kurve oberhalb der $AVC$.
-    ![2548 Stilllegungsbedingung|500](media/2548_Stilllegungsbedingung.png)
+    <img src="media/2548_Stilllegungsbedingung.png" alt="2548 Stilllegungsbedingung" width="500">
 
 ## Langfristiges Angebot & Skalenerträge
 
@@ -77,7 +77,7 @@ Zwei äquivalente Wege zum **selben Ergebnis**:
         - Preis $p < c_{min}$ führt zu Marktaustritt.
         - **Gleichgewicht**: Marktpreis entspricht $c_{min} \to$ **Ökonomischer Nullgewinn**. Angebotskurve ist horizontal.
 
-![2548 Langfristige Angebotskurve|600](media/2548_Langfristige_Angebotskurve.png)
+<img src="media/2548_Langfristige_Angebotskurve.png" alt="2548 Langfristige Angebotskurve" width="600">
 
 ## Faktornachfrage & Effekte
 
@@ -98,4 +98,4 @@ Zwei äquivalente Wege zum **selben Ergebnis**:
     - Zusammenhang: $Produzentenrente = \pi + Fixkosten$.
     - Langfristig (wenn $F=0$) gilt: Produzentenrente = Gewinn.
 
-![2548 Produzentenrente|600](media/2548_Produzentenrente.png)
+<img src="media/2548_Produzentenrente.png" alt="2548 Produzentenrente" width="600">

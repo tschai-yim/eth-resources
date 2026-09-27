@@ -26,7 +26,7 @@
     - **Drei Güter**: Grafisch darstellbar als Budgetebene im 3D-Raum.
     - **n Güter**: Grafisch nicht darstellbar; mathematisch mit Vektoren: $p' \cdot x \le m$.
 
-![2539 Budgetgerade|600](media/2539_Budgetgerade.png)
+<img src="media/2539_Budgetgerade.png" alt="2539 Budgetgerade" width="600">
 
 ## Spezialfälle und Interpretationen
 
@@ -52,7 +52,7 @@
     - **Erhöhung** des Einkommens ($m$): **Parallelverschiebung nach aussen**.
     - **Senkung** des Einkommens: **Parallelverschiebung nach innen**.
     - Steigung ($-p_1/p_2$) bleibt unverändert.
-    ![2539 Einkommenserhöhung|500](media/2539_Einkommenserhöhung.png)
+    <img src="media/2539_Einkommenserhöhung.png" alt="2539 Einkommenserhöhung" width="500">
 - **Preisänderungen**:
     - **Proportionale Preisänderung** (Faktor $t$, z.B. Inflation): Gleicher Effekt wie Division des Einkommens durch $t$.
         - Folge: **Parallelverschiebung nach innen**.
@@ -60,7 +60,7 @@
     - **Änderung eines Preises**:
         - Sinkt $p_1$, wird Budgetgerade **flacher** (Drehung nach aussen um Ordinatenabschnitt $m/p_2$).
         - Steigt $p_1$, wird sie **steiler** (Drehung nach innen).
-        ![2539 Änderung eines Preises|500](media/2539_Änderung_eines_Preises.png)
+        <img src="media/2539_Änderung_eines_Preises.png" alt="2539 Änderung eines Preises" width="500">
 
 ## Staatliche Eingriffe und ihre Auswirkungen
 
@@ -76,11 +76,11 @@
 - **Rationierung**:
     - Begrenzung der max. konsumierbaren Menge (z.B. Gut 1 auf $\bar{x}_1$).
     - Budget am Punkt $\bar{x}_1$ **vertikal abgeschnitten**.
-	![2539 Rationierung|500](media/2539_Rationierung.png)
+	<img src="media/2539_Rationierung.png" alt="2539 Rationierung" width="500">
 - **Kombinierte Eingriffe**:
     - **Steuer ab Menge $\bar{x}_1$**: Preis $p_1$ bis $\bar{x}_1$, danach $p_1 + t$. Führt zu **Knick in Budgetgerade** (wird steiler).
     - **Beispiel Food-Stamp-Programm (vor 1979)**: Kauf von Lebensmittelgutscheinen zum subventionierten Preis. Führt zu flacherer Budgetgerade bis zum Gutschein-Maximalwert, danach Knick zur ursprünglichen Steigung.
-    ![2539 US Food-Stamp-Programm|600](media/2539_US_Food-Stamp-Programm.png)
+    <img src="media/2539_US_Food-Stamp-Programm.png" alt="2539 US Food-Stamp-Programm" width="600">
 
 ## Spezialfälle und Anwendungsbeispiele
 

@@ -20,7 +20,7 @@
     - Der Punkt, an dem die **Isoquante** (Technologie) die niedrigstmögliche **Isokostengerade** (Preise) **tangiert**.
     - Steigung Isoquante ($TRS$) = Steigung Isokostengerade ($-w/v$).
 
-![2547 Kostenminimierung|600](media/2547_Kostenminimierung.png)
+<img src="media/2547_Kostenminimierung.png" alt="2547 Kostenminimierung" width="600">
 
 ## Expansionspfad & Faktornachfrage
 
@@ -68,7 +68,7 @@
     - $MC = AC$ im **Minimum der AC**.
 - **Beispiel Software**: Hohe Fixkosten, $MC \approx 0$ $\to$ $AC$ sinken fast immer (**Skaleneffekte**).
 
-![2547 Kostenkurven|500](media/2547_Kostenkurven.png)
+<img src="media/2547_Kostenkurven.png" alt="2547 Kostenkurven" width="500">
 
 ## Kostenelastizität
 
@@ -96,7 +96,7 @@
     - **Sinken durch**: Sinkende Inputpreise, "Learning by doing", Fixkostendegression (Software).
     - **Steigen durch**: Bürokratie, Koordinationsprobleme, interne Konflikte (z.B. Kulturclash bei Fusionen).
 
-![2547 Envelope Theorem|600](media/2547_Envelope_Theorem.png)
+<img src="media/2547_Envelope_Theorem.png" alt="2547 Envelope Theorem" width="600">
 
 ## Empirische Anwendung & Kapitalanpassung
 

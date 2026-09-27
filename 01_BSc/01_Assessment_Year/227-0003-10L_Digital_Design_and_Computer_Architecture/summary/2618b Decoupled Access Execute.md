@@ -1,6 +1,6 @@
 ## Decoupled Access/Execute (DAE)
 
-![2618b DAE Schema|300](media/2618b_DAE_Schema.png)
+<img src="media/2618b_DAE_Schema.png" alt="2618b DAE Schema" width="300">
 
 - **Motivation**: **Tomasulo's algorithm** too complex for 1980s hardware.
 - **Core Idea**: Decoupling memory access from execution via separate instruction streams and **ISA-visible queues**.

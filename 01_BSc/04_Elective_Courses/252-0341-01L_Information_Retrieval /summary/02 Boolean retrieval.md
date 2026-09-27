@@ -30,7 +30,7 @@
     - **Recall**: Fraction of existing relevant documents found ($TP / (TP + FN)$).
 - **Compromise**: High precision and high recall simultaneously difficult; trade-off tuned based on acceptable error type.
 
-![02 Precision Recall Matrix|400](media/02_Precision_Recall_Matrix.png)
+<img src="media/02_Precision_Recall_Matrix.png" alt="02 Precision Recall Matrix" width="400">
 
 ## Naive Approach (Grepping)
 
@@ -56,7 +56,7 @@
     - Matrices are gigantic (e.g., $10^6$ docs $\times$ $5 \cdot 10^5$ terms = $500$ billion Booleans).
     - Typical document has $\sim 1,000$ terms $\rightarrow$ **99.8% empty** (highly **space-inefficient**).
 
-![02 Incidence Matrix|500](media/02_Incidence_Matrix.png)
+<img src="media/02_Incidence_Matrix.png" alt="02 Incidence Matrix" width="500">
 
 ## The Inverted Index
 
@@ -74,7 +74,7 @@
     5. **Merge** duplicates into single **postings list** per term.
     6. Add **document frequency** to dictionary.
 
-![02 Standard Inverted Index|500](media/02_Standard_Inverted_Index.png)
+<img src="media/02_Standard_Inverted_Index.png" alt="02 Standard Inverted Index" width="500">
 
 ## Boolean Query Algorithms
 

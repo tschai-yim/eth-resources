@@ -44,7 +44,7 @@
 - Basiert auf **Vorbehaltspreis**: Maximale Zahlungsbereitschaft einer Person.
 - **Fallender Verlauf**: niedrigerer Preis -> höhere Nachfrage.
 
-![2538 Nachfragekurve|500](media/2538_Nachfragekurve.png)
+<img src="media/2538_Nachfragekurve.png" alt="2538 Nachfragekurve" width="500">
 
 ## Die Angebotskurve
 
@@ -55,7 +55,7 @@
 - **Kurzfristig**: Anzahl der Wohnungen ist **konstant**.
     - Angebotskurve ist eine **vertikale Linie**.
 
-![2538 Angebotskurve|500](media/2538_Angebotskurve.png)
+<img src="media/2538_Angebotskurve.png" alt="2538 Angebotskurve" width="500">
 
 ## Marktgleichgewicht
 
@@ -65,18 +65,18 @@
 - Preis **> p\***: **Angebotsüberschuss** (Leerstand) -> Preisdruck nach unten.
 - Preis **< p\***: **Nachfrageüberschuss** (Warteschlangen) -> Preisdruck nach oben.
 
-![2538 Marktgleichgewicht|500](media/2538_Marktgleichgewicht.png)
+<img src="media/2538_Marktgleichgewicht.png" alt="2538 Marktgleichgewicht" width="500">
 
 ## Komparative Statik
 
 - Vergleich von Gleichgewichtszuständen (vor/nach Änderung), ohne Analyse des Übergangs.
 - **Beispiel 1: Angebotserhöhung**
     - Angebotskurve nach rechts -> **Gleichgewichtspreis sinkt**.
-	![2538 Angebotserhöhung|500](media/2538_Angebotserhöhung.png)
+	<img src="media/2538_Angebotserhöhung.png" alt="2538 Angebotserhöhung" width="500">
 - **Beispiel 2: Umwandlung in Eigentumswohnungen**
     - Angebot sinkt. Wenn Käufer Ex-Mieter sind, sinkt auch die Nachfrage.
     - Bei gleicher Verschiebung beider Kurven nach links -> **Gleichgewichtspreis bleibt unverändert**.
-	![2538 Umwandlung in Eigentumswohnungen|500](media/2538_Umwandlung_in_Eigentumswohnungen.png)
+	<img src="media/2538_Umwandlung_in_Eigentumswohnungen.png" alt="2538 Umwandlung in Eigentumswohnungen" width="500">
 - **Beispiel 3: Wohnungssteuer (kurzfristig)**
     - Angebot (Anzahl Wohnungen) und Nachfrage (Zahlungsbereitschaft) ändern sich nicht.
     - **Gleichgewichtspreis bleibt unverändert**; Vermieter tragen die Steuerlast.
@@ -90,12 +90,12 @@
     - Ein Anbieter, ein **einziger Preis** für alle.
     - Wählt Preis zur Maximierung des **Gesamterlöses (Preis x Menge)**.
     - Ergebnis: oft **weniger Angebot** zu **höherem Preis** als im Konkurrenzmarkt.
-	![2538 Gewöhnlicher Monopolist|500](media/2538_Gewöhnlicher_Monopolist.png)
+	<img src="media/2538_Gewöhnlicher_Monopolist.png" alt="2538 Gewöhnlicher Monopolist" width="500">
 - **Mietenkontrolle**:
     - Staatlich festgelegter **Höchstpreis (p_max)** unter dem Gleichgewichtspreis.
     - Führt zu **Nachfrageüberschuss**.
     - Wer die Wohnungen bekommt, ist im Modell unklar.
-	![2538 Mietenkontrolle|500](media/2538_Mietenkontrolle.png)
+	<img src="media/2538_Mietenkontrolle.png" alt="2538 Mietenkontrolle" width="500">
 
 ## Bewertung von Allokationsmechanismen: Pareto-Effizienz
 

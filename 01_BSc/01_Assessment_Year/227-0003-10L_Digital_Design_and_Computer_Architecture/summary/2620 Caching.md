@@ -5,7 +5,7 @@
     - **Spatial Locality**: Accessing adjacent memory locations sequentially (e.g., array traversals, sequential instructions).
 - **Tail Latency**: High cache hit rates hide average latency. Critical systems must actively account for rare maximum latency spikes (**tail latency**) for reliability.
 
-![2620a Memory Hierarchy|600](media/2620a_Memory_Hierarchy.png)
+<img src="media/2620a_Memory_Hierarchy.png" alt="2620a Memory Hierarchy" width="600">
 
 ## Hierarchical Latency Analysis
 
@@ -29,9 +29,9 @@
     - **Fully-Associative**: 1 block $\rightarrow$ any location (no index bits used). No modulo conflict limits exist; requires power-hungry parallel tag comparators.
 - **Associativity Flexibility**: No power-of-2 requirement (e.g., **Intel Lion Cove** uses 3-way or 12-way caches to maximize physical die area utilization).
 
-![2620a Mapping Strategies|600](media/2620a_Mapping_Strategies.png)
+<img src="media/2620a_Mapping_Strategies.png" alt="2620a Mapping Strategies" width="600">
 
-![2620a Set-Associative Mapping|600](media/2620a_Set-Associative_Mapping.png)
+<img src="media/2620a_Set-Associative_Mapping.png" alt="2620a Set-Associative Mapping" width="600">
 
 ## Cache Management Policies
 
@@ -53,7 +53,7 @@
     - **L1 Cache**: Almost always split (Instruction/Data) due to **pipeline constraints** (fetch and execution occur at opposite physical ends of processor).
     - **Outer Caches (L2/L3)**: Almost always unified for dynamic capacity sharing.
 - **Subblocked (Sectored) Caches**: Divides cache block into smaller sectors.
-  ![2620a Subblocked Cache|600](media/2620a_Subblocked_Cache.png)
+  <img src="media/2620a_Subblocked_Cache.png" alt="2620a Subblocked Cache" width="600">
     - Uses $1$ shared **Tag** per block, but tracks separate **Valid/Dirty bits** per subblock.
     - **Benefit**: Avoids transferring full 64B blocks for small operations. Allows fetching/writing specific chunks, saving bus bandwidth.
 - **Hierarchy Inclusivity**:
@@ -76,7 +76,7 @@
 
 - **Restructuring Access Patterns**: Aligning nested loops to memory layout (**Loop Interchange** for column-major data).
 - **Blocking / Tiling**: Dividing massive array loops into smaller computation chunks fitting entirely into cache/scratchpad to prevent thrashing.
-  ![2620a Tiling|400](media/2620a_Tiling.png)
+  <img src="media/2620a_Tiling.png" alt="2620a Tiling" width="400">
 - **Restructuring Data Layout**: Separating **hot** (frequently accessed) and **cold** (rarely accessed) data into different structs avoiding cache pollution (e.g., separating linked-list keys from heavy payload data).
 - **Bypassing**: Modern GPUs allow direct L2 $\rightarrow$ scratchpad copies, bypassing L1/register files entirely to save internal bandwidth.
 
@@ -87,16 +87,16 @@
     - Eliminating one **isolated miss** saves significantly more time than eliminating one **parallel miss** (parallel miss stall latency hidden behind other ongoing misses).
     - **MLP-Aware Cache Replacement**: Hybrid policy. Retains isolated miss blocks; intentionally evicts parallel miss blocks. Improves execution time despite higher total miss count.
 - **Off-Chip Prediction**: Uses predictors (e.g., machine learning perceptrons) identifying long-latency loads early. Routes predicted misses immediately to main memory overlapping latency with ongoing computations.
-  ![2620a MLP Miss Predictor|500](media/2620a_MLP_Miss_Predictor.png)
+  <img src="media/2620a_MLP_Miss_Predictor.png" alt="2620a MLP Miss Predictor" width="500">
 
-![2620a MLP Cache Misses|600](media/2620a_MLP_Cache_Misses.png)
+<img src="media/2620a_MLP_Cache_Misses.png" alt="2620a MLP Cache Misses" width="600">
 
 ## Multi-Core Caching and Coherence
 
 - **Private vs. Shared Caches**:
     - **Private Cache**: Dedicated exclusively to one core. Fast; underutilizes system space.
     - **Shared Cache**: Used by multiple cores. Improves utilization and lowers inter-thread latency. Introduces severe resource contention; destroys **performance isolation** (causing unfairness/QoS degradation).
-      ![2620a Unfair sharing|500](media/2620a_Unfair_sharing.png)
+      <img src="media/2620a_Unfair_sharing.png" alt="2620a Unfair sharing" width="500">
 - **Cache Coherence Necessity**: Hardware cache coherence **absolutely necessary** in shared-memory multi-core processors. Software coherence management destroys performance.
 - **Broadcast-Based (Snoopy Bus)**: Cores broadcast writes/updates. Other caches snoop bus invalidating/updating local copies. Scales poorly to high core counts.
 - **Directory-Based**: Central directory tracks cache block locations using $P+1$ bits ($P$ processors + $1$ **Exclusive bit**).

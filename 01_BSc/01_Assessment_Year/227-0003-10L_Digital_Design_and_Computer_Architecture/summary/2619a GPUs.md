@@ -13,12 +13,12 @@
 ## GPU Microarchitecture
 
 - **Warps (NVIDIA) / Wavefronts (AMD)**:
-  ![2619a Warp|700](media/2619a_Warp.png)
+  <img src="media/2619a_Warp.png" alt="2619a Warp" width="700">
     - **Logical grouping** of independent threads (e.g., 32) formed dynamically by the hardware, not a physical hardware piece.
     - Grouped strictly because they execute the exact same **Program Counter (PC)** simultaneously.
     - Governed by an **Active Mask** (bit vector) tracking which threads are currently valid/active for the executed instruction.
 - **Hardware Units**:
-  ![2619a Streaming Multiprocessor|300](media/2619a_Streaming_Multiprocessor.png)
+  <img src="media/2619a_Streaming_Multiprocessor.png" alt="2619a Streaming Multiprocessor" width="300">
     - **Streaming Multiprocessor (SM)**: The actual physical "core" of the GPU (e.g., 160 in Blackwell B200). Fetches instructions, schedules warps, and holds local caches/registers.
     - **Streaming Processor (SP) / CUDA Core**: An individual vector lane / ALU inside the SM. Computes math for exactly *one* thread of a warp per cycle.
 - **Tensor Cores**:
@@ -26,7 +26,7 @@
     - Support mixed-precision computing (e.g., FP16/FP8 inputs, FP32 accumulation).
     - Modern iterations support **Sparsity** (compressing matrices to skip calculations on zero values).
 - **Memory Hierarchy**:
-  ![2619a Memory Hierarchy|600](media/2619a_Memory_Hierarchy.png)
+  <img src="media/2619a_Memory_Hierarchy.png" alt="2619a Memory Hierarchy" width="600">
     - **Registers**: Fastest memory. Private to each individual thread. Excessive register use limits maximum concurrent warps.
     - **Shared Memory**: Software-programmable scratchpad cache. Shared among all threads *within a single block*. Requires local synchronization barriers (`__syncthreads()`).
     - **Global Memory (DRAM)**: Large, high-latency memory accessible by all threads globally and the Host. Includes Read-Only (Constant) and Texture memory.
@@ -38,18 +38,18 @@
     - If a warp stalls (e.g., cache miss), the **warp scheduler** instantly swaps it for a ready warp.
     - Masks massive memory latencies purely through continuous computation.
 - **Control Flow / Branch Divergence**:
-  ![2619a Branch Divergence|400](media/2619a_Branch_Divergence.png)
+  <img src="media/2619a_Branch_Divergence.png" alt="2619a Branch Divergence" width="400">
     - Threads within a single warp evaluate a branch (`if/else`) differently.
     - Logically splits the single warp into two sequential passes.
     - Hardware executes paths sequentially, using the **Active Mask** to enable/disable specific threads per path.
     - Drops **SIMD Utilization** (e.g., 50/50 split halts half the lanes, dropping efficiency by 50%).
 - **Dynamic Warp Formation / Merging**:
-  ![2619a Dynamic Warp Formation|600](media/2619a_Dynamic_Warp_Formation.png)
+  <img src="media/2619a_Dynamic_Warp_Formation.png" alt="2619a Dynamic Warp Formation" width="600">
     - Hardware scheduler scans for waiting, divergent warps stalled at the exact same **PC**.
     - Merges partially empty warps into a single full warp (restoring the active mask).
     - **Constraint**: Threads cannot map to arbitrary lanes. The physical **Register File** is strictly partitioned by lane ID.
 - **Two-Level Warp Scheduling**:
-  ![2619a Two-Level Warp Scheduling|600](media/2619a_Two-Level_Warp_Scheduling.png)
+  <img src="media/2619a_Two-Level_Warp_Scheduling.png" alt="2619a Two-Level Warp Scheduling" width="600">
     - **Problem**: Standard round-robin scheduling of 1000 warps causes simultaneous long-latency memory loads, stalling the entire **SM**.
     - **Solution**: Group warps into smaller subgroups. Process one subgroup rapidly until it stalls, then compute the next subgroup while the first fetches memory.
 
@@ -111,31 +111,31 @@ int main() {
     - Ratio of active warps to the theoretical maximum warps per **SM**.
     - Hard-limited by partitioned resources: **Program Counters**, **Registers**, and **Shared Memory**.
 - **Global Memory Coalescing**:
-  ![2619a Structures of Arrays and AoS|600](media/2619a_Structures_of_Arrays_and_AoS.png)
+  <img src="media/2619a_Structures_of_Arrays_and_AoS.png" alt="2619a Structures of Arrays and AoS" width="600">
     - Goal: Concurrent threads in a warp access contiguous memory locations within the same cache line (e.g., 128 bytes).
     - **AoS (Array of Structures)**: Scatters thread accesses with large strides. Generates uncoalesced transactions $\rightarrow$ destroys bandwidth. **Never use on GPUs**.
     - **SoA (Structure of Arrays)**: Ensures contiguous threads hit contiguous data $\rightarrow$ maximizes bandwidth.
 - **Shared Memory Bank Conflicts**:
-  ![2619a Bank Conflicts|600](media/2619a_Bank_Conflicts.png)
+  <img src="media/2619a_Bank_Conflicts.png" alt="2619a Bank Conflicts" width="600">
     - **Banks**: Interleaved memory modules servicing exactly one address per cycle.
     - **Mapping**: Successive 32-bit words map to successive banks (`Bank = Address % 32`).
     - **Conflict**: Multiple threads in *one warp* request *different* addresses mapping to the *same* bank.
     - Forces **serialization** (e.g., 2-way conflict halves memory bandwidth).
     - **Padding**: Adding empty, unused bytes at row ends to shift modulo-32 math, purposefully misaligning data to prevent conflicts.
 - **Control Flow Optimization**:
-  ![2619a Naive Reduction|400](media/2619a_Naive_Reduction.png)
-  ![2619a Optimized Reduction|400](media/2619a_Optimized_Reduction.png)
+  <img src="media/2619a_Naive_Reduction.png" alt="2619a Naive Reduction" width="400">
+  <img src="media/2619a_Optimized_Reduction.png" alt="2619a Optimized Reduction" width="400">
     - Rewriting algorithms (e.g., tree reductions) to ensure active threads remain sequentially adjacent.
     - Prevents intra-warp divergence and maintains 100% active masks.
 - **Atomic Operations**:
-  ![2619a Privatization|500](media/2619a_Privatization.png)
+  <img src="media/2619a_Privatization.png" alt="2619a Privatization" width="500">
     - Native hardware instructions safely updating the exact same memory address across threads. Forces strict serialization.
     - **Privatization**: Blocks compute local sub-results entirely in fast **Shared Memory**, eliminating global contention. Merged into **Global Memory** once via atomics at the end.
 
 ## Collaborative Computing
 
 - **Asynchronous Transfers (Streams)**:
-  ![2619a Streams|600](media/2619a_Streams.png)
+  <img src="media/2619a_Streams.png" alt="2619a Streams" width="600">
     - **Streams**: Independent command queues executed sequentially.
     - Overlaps CPU-GPU communication (`cudaMemcpyAsync`) with computation (kernel execution). Crucial for streaming video/data.
 - **Unified Memory**:

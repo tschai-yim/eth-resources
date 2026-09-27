@@ -14,7 +14,7 @@
 - **Produktionsfunktion**: Gibt den **maximal möglichen Output** für gegebene Inputs an.
     - Notation: $q = f(k, l)$ für Kapital $k$ und Arbeit $l$.
 
-![2546 Produktionsmöglichkeitsmenge|600](media/2546_Produktionsmöglichkeitsmenge.png)
+<img src="media/2546_Produktionsmöglichkeitsmenge.png" alt="2546 Produktionsmöglichkeitsmenge" width="600">
 
 - **Isoquante**: Alle Input-Kombinationen, die ein **fixes Outputniveau** erzeugen.
     - **Analogie**: Höhenlinien auf einer Landkarte.
@@ -23,7 +23,7 @@
 - **Annahmen (Eigenschaften von Technologien)**:
     - **Monotonie (freie Verfügbarkeit)**: Mehr Input $\implies$ mindestens gleicher Output.
     - **Konvexität**: Mischungen von Inputbündeln sind mindestens so gut wie die Extreme $\implies$ konvexe Isoquanten.
-      ![2546 Konvexität|500](media/2546_Konvexität.png)
+      <img src="media/2546_Konvexität.png" alt="2546 Konvexität" width="500">
 - **Produktivität**: Mass für die Effizienz; wie viel Output pro Input generiert wird.
     - **Arbeitsproduktivität**: Durchschnittlicher Output pro Arbeitseinheit ($AP_l = q/l$).
 
@@ -36,7 +36,7 @@
         - Inputs sind **perfekte Substitute**.
         - Isoquanten: **Parallele Geraden**.
         - **Substitutionselastizität**: $\sigma = \infty$.
-    ![2546 Lineare Produktionsfunktion|500](media/2546_Lineare_Produktionsfunktion.png)
+    <img src="media/2546_Lineare_Produktionsfunktion.png" alt="2546 Lineare Produktionsfunktion" width="500">
 - **Leontief-Produktionsfunktion (Konstante Proportionen)**:
     - Formel: $q = \min\{ak, bl\}$.
     - **Parameter**: $a$ und $b$ definieren das feste Einsatzverhältnis der Inputs.
@@ -44,7 +44,7 @@
         - Inputs sind **perfekte Komplemente**.
         - Isoquanten: **L-förmig**.
         - **Substitutionselastizität**: $\sigma = 0$.
-	![2546 Leontief-Produktionsfunktion|500](media/2546_Leontief-Produktionsfunktion.png)
+	<img src="media/2546_Leontief-Produktionsfunktion.png" alt="2546 Leontief-Produktionsfunktion" width="500">
 - **Cobb-Douglas-Produktionsfunktion**:
     - Formel: $q = Ak^\alpha l^\beta$.
     - **Parameter**:
@@ -53,7 +53,7 @@
     - **Eigenschaften**:
         - Mischform mit konvexen Isoquanten.
         - **Substitutionselastizität**: $\sigma = 1$.
-    ![2546 Cobb-Douglas-Produktionsfunktion|300](media/2546_Cobb-Douglas-Produktionsfunktion.png)
+    <img src="media/2546_Cobb-Douglas-Produktionsfunktion.png" alt="2546 Cobb-Douglas-Produktionsfunktion" width="300">
 - **CES-Produktionsfunktion (Constant Elasticity of Substitution)**:
     - Formel: $q = (\alpha k^\rho + (1-\alpha)l^\rho)^{\gamma/\rho}$.
     - **Wichtigste und flexibelste Funktion**, enthält die anderen als Spezialfälle.
@@ -94,7 +94,7 @@
     - **Cobb-Douglas-Produktion**: $\sigma = 1$.
     - **CES-Produktion**: $\sigma = \frac{1}{1-\rho}$, kann also beliebig konstant sein.
 
-![2546 Substitutionselastizität|500](media/2546_Substitutionselastizität.png)
+<img src="media/2546_Substitutionselastizität.png" alt="2546 Substitutionselastizität" width="500">
 
 ## Skalenerträge
 

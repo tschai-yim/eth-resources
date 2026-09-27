@@ -20,7 +20,7 @@
     - **Positionsänderung:** Vorzeichenbehaftet $\to \int v(t)dt$.
     - **Zurückgelegte Strecke:** Absolutbetrag (Motor läuft immer) $\to \int |v(t)|dt$.
 - **Konstruktion & Riemann-Integrierbarkeit:**
-  ![2620 Riemann-Integral|300](media/2620_Riemann-Integral.png)
+  <img src="media/2620_Riemann-Integral.png" alt="2620 Riemann-Integral" width="300">
     - **Zerlegung** (Partition): Intervall-Unterteilung in (nicht zwingend gleiche) Teilintervalle [^def_zerlegung].
     - **Treppenfunktion** (Step function): Konstante Werte auf Teilintervallen (Randpunkte irrelevant) [^def_treppenfunktion].
     - Integral der Treppenfunktion: Summe der Rechteckflächen (Breite $\cdot$ Höhe) [^def_integral_treppenfunktion].

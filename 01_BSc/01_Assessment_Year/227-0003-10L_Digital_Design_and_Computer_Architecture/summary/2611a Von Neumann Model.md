@@ -10,9 +10,9 @@
     1. **Stored program**: Instructions and data share unified, linear memory. Interpretation of values depends strictly on control signals (when fetched).
     2. **Sequential instruction processing**: One instruction processed at a time. **Program Counter** advances sequentially unless explicitly changed by control transfer instructions.
 
-![2611a Von Neumann Model|500](media/2611a_Von_Neumann_Model.png)
+<img src="media/2611a_Von_Neumann_Model.png" alt="2611a Von Neumann Model" width="500">
 
-![2611a LC-3 Circuit|600](media/2611a_LC-3_Circuit.png)
+<img src="media/2611a_LC-3_Circuit.png" alt="2611a LC-3 Circuit" width="600">
 
 ## Memory & Addressing
 
@@ -42,7 +42,7 @@
     - **LC-3 Registers**: 8 **General Purpose Registers (GPRs)** (`R0` to `R7`). 3-bit identifier, 16-bit size.
     - **MIPS Registers**: 32 GPRs. 5-bit identifier, 32-bit size. Uses specific conventions (e.g., `Register 0` hardwired to `0`).
 
-![2611a MIPS Register File|500](media/2611a_MIPS_Register_File.png)
+<img src="media/2611a_MIPS_Register_File.png" alt="2611a MIPS Register File" width="500">
 
 ## Control Unit & State
 
@@ -76,4 +76,4 @@
         - **Datapath action**: Read Base Register from Register File (via `SR1` identified by IR bits) $\rightarrow$ route data directly to `PC` $\rightarrow$ assert `LD.PC`.
         - *Result*: Overwrites the sequentially incremented PC loaded during State 1.
 
-![2611a LC-3 Control FSM|600](media/2611a_LC-3_Control_FSM.png)
+<img src="media/2611a_LC-3_Control_FSM.png" alt="2611a LC-3 Control FSM" width="600">

@@ -13,7 +13,7 @@
     - **Kernel-Level Thread**: OS-Verwaltung (oft $1:1$-Mapping Java- zu Kernel-Threads).
     - **CPU-Level Thread**: Hardware-Ebene (z.B. Hyperthreading).
 
-![01a Big Picture|700](media/01a_Big_Picture.png)
+<img src="media/01a_Big_Picture.png" alt="01a Big Picture" width="700">
 
 ## Parallelität vs. Nebenläufigkeit (Concurrency)
 
@@ -31,4 +31,4 @@
     - **Parallel (Multi-Core, ohne Switching)**: Kontinuierliche Ausführung auf getrennten Cores.
     - **Concurrent & Parallel**: Multi-Core plus OS-Switching (optimale Auslastung).
 
-![01a Parallelism and Concurrency|700](media/01a_Parallelism_and_Concurrency.png)
+<img src="media/01a_Parallelism_and_Concurrency.png" alt="01a Parallelism and Concurrency" width="700">

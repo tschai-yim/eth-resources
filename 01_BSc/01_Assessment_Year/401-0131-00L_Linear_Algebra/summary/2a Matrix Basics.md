@@ -15,7 +15,7 @@
     - **Tall matrix**: More rows than columns ($m>n$).
     - **Wide matrix**: More columns than rows ($m<n$).
     - **Square matrix**: Equal rows and columns ($m=n$). [^2.2]
-	![2 Matrix shapes|300](media/2_Matrix_shapes.png)
+	<img src="media/2_Matrix_shapes.png" alt="2 Matrix shapes" width="300">
 - **Transpose**:
     - The **transpose** $A^T$ of a matrix $A$ results from mirroring along its main diagonal. [^2.12]
     - Rows of $A$ become columns of $A^T$. [^2.12]
@@ -26,7 +26,7 @@
     - **Upper triangular**: Entries below the diagonal are zero ($a_{ij}=0$ for $i > j$). [^2.3]
     - **Lower triangular**: Entries above the diagonal are zero ($a_{ij}=0$ for $i < j$). [^2.3]
     - **Symmetric matrix**: Matrix equals its transpose ($A = A^T$, or $a_{ij} = a_{ji}$). [^2.3][^2.13]
-    ![2 Square matrix classes|600](media/2_Square_matrix_classes.png)
+    <img src="media/2_Square_matrix_classes.png" alt="2 Square matrix classes" width="600">
 
 ## Subspaces
 
@@ -34,11 +34,11 @@
     - The zero vector is always in $C(A)$ since $A0=0$.
 - **Row Space ($R(A)$)**: Formally defined as the **column space of the transpose**, $R(A) := C(A^T)$. [^2.14]
     - Equivalent to the span of the row vectors of $A$.
-    ![2 Row space|600](media/2_Row_space.png)
+    <img src="media/2_Row_space.png" alt="2 Row space" width="600">
 - **Nullspace ($N(A)$)**: Set of all input vectors $x$ mapped to the zero vector; the solution set to $Ax=0$. [^2.17]
     - **Intuition**: Represents the "redundancy" among columns. A larger nullspace implies more linear dependencies.
     - If $N(A) = \{0\}$, the columns of $A$ are linearly independent. [^2.5]
-    ![2 Nullspace|500](media/2_Nullspace.png)
+    <img src="media/2_Nullspace.png" alt="2 Nullspace" width="500">
 - **Example Question**: For $A = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}$, show $C(A) = N(A)$.
     - **Column Space**: $C(A) = \text{span}(\begin{pmatrix} 0 \\ 0 \end{pmatrix}, \begin{pmatrix} 1 \\ 0 \end{pmatrix}) = \{ \begin{pmatrix} c \\ 0 \end{pmatrix} | c \in \mathbb{R} \}$ (the x-axis).
     - **Nullspace**: $Ax=0 \implies \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix} \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix} \implies x_2=0$. The solutions are $\{ \begin{pmatrix} x_1 \\ 0 \end{pmatrix} | x_1 \in \mathbb{R} \}$ (the x-axis).

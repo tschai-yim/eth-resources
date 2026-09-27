@@ -23,7 +23,7 @@
     - Hardware waits until exception-causing instruction is the **oldest instruction ready to retire**.
     - Hardware flushes younger instructions, saves **PC** to **EPC (Exception PC)**, saves cause, and jumps to handler.
 
-![2614b Exception FSM|600](media/2614b_Exception_FSM.png)
+<img src="media/2614b_Exception_FSM.png" alt="2614b Exception FSM" width="600">
 
 ## Reorder Buffer (ROB) & Register Renaming
 
@@ -40,9 +40,9 @@
     - Register file uses **Tags** instead of slow **Content Addressable Memory (CAM)** for ROB searches.
     - Invalid registers point directly to specific producing ROB entry IDs (enables fast, direct access).
 
-![2614b ROB Sequence|500](media/2614b_ROB_Sequence.png)
+<img src="media/2614b_ROB_Sequence.png" alt="2614b ROB Sequence" width="500">
 
-![2614b ROB Table|600](media/2614b_ROB_Table.png)
+<img src="media/2614b_ROB_Table.png" alt="2614b ROB Table" width="600">
 
 ## Alternative State Recovery Mechanisms
 

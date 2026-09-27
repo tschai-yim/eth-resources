@@ -5,7 +5,7 @@
     - **Words / Strings** (TCS) $\rightarrow$ **Documents** (IR).
 - **Language Model (LM)**: Probabilistic function creating a distribution over vocabulary strings. Sum of all generated string probabilities $= 1$.
 - **Finite State Automaton (FSA)**: Theoretical graph for recognizing/generating regular languages.
-  ![11 Finite State Automaton|500](media/11_Finite_State_Automaton.png)
+  <img src="media/11_Finite_State_Automaton.png" alt="11 Finite State Automaton" width="500">
     - **Components**: **States** (nodes), **Transitions** (edges), **Start state**, and **Accept/Stop state**.
     - **FSA as a Generator**: Outgoing transition probabilities must sum to $1$ per node.
     - **Generation Probability**: Product of all transition probabilities along the path until the stop state.
@@ -18,7 +18,7 @@
 - **Markov Assumption & K-Gram Models**: Limits memory to handle complexity. Assumes probability of a term depends *only* on the previous $k$ terms (**k-gram model**).
     - **Bigram Model**: Remembers $1$ previous term ($P(d_k | d_{k-1})$). FSA has one state per vocabulary word.
     - **Unigram Model**: Zero memory. Complete term independence ($P(d_k)$).
-      ![11 Unigram Model|400](media/11_Unigram_Model.png)
+      <img src="media/11_Unigram_Model.png" alt="11 Unigram Model" width="400">
     - **Bias-Variance Tradeoff**: Higher-order models capture local structure better, but IR uses **Unigrams** due to severe **data sparseness** in individual documents.
 
 ## List vs. Bag of Words Semantics
@@ -55,7 +55,7 @@
     - Causes **strict conjunctive semantics** (one missing term forces total probability to $0$).
     - Overestimates probability of chance single-occurrence terms.
 - **Smoothing Approaches**: Reassigns probability mass from observed to unseen words.
-  ![11 Smoothing|400](media/11_Smoothing.png)
+  <img src="media/11_Smoothing.png" alt="11 Smoothing" width="400">
     - **Linear Interpolation (Jelinek-Mercer)**: Mixes document MLE with global **Collection Model** ($M_c$).
         - Formula: $P(t|d) = \lambda P_{mle}(t|M_d) + (1 - \lambda) P_{mle}(t|M_c)$
         - Controlled by parameter $\lambda \in (0, 1)$.
@@ -69,7 +69,7 @@
     - Hard to estimate due to short queries.
     - Useful for integrating **Relevance Feedback** (expanding $M_q$ via relevant docs).
 - **Model Comparison**: Builds probabilistic models for query ($M_q$) and document ($M_d$), measuring distance between them.
-  ![11 Model Comparison|400](media/11_Model_Comparison.png)
+  <img src="media/11_Model_Comparison.png" alt="11 Model Comparison" width="400">
     - **Kullback-Leibler (KL) Divergence**: Asymmetric information theory metric calculating how bad $M_q$ is at modeling $M_d$.
 - **Translation Models**: Addresses vocabulary mismatches (synonymy / cross-language IR).
     - Translates document terms to query terms via conditional probability distribution $T(t|v)$.

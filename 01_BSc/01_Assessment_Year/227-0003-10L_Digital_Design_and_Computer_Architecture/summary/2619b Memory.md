@@ -26,14 +26,14 @@
     - Extremely fast.
     - Extremely expensive (tens of transistors per single bit).
 - **Static RAM (SRAM)**:
-  ![2619b SRAM|300](media/2619b_SRAM.png)
+  <img src="media/2619b_SRAM.png" alt="2619b SRAM" width="300">
     - Stores data using two **cross-coupled inverters**.
     - Typically uses **6 transistors (6T cell)** (4 for storage, 2 for access).
     - Fast access, lower density, higher cost ($< \$0.3$ per MB).
     - **Logic-compatible**: Easily manufactured directly on processor die.
     - Retains data indefinitely as long as powered (no refresh needed).
 - **Dynamic RAM (DRAM)**:
-  ![2619b DRAM|200](media/2619b_DRAM.png)
+  <img src="media/2619b_DRAM.png" alt="2619b DRAM" width="200">
     - Stores data as electrical charge inside a **capacitor** (Empty = `0`, Charged = `1`).
     - Uses **1 transistor, 1 capacitor (1T1C cell)**.
     - Slower access, high density, very low cost ($< \$0.006$ per MB).
@@ -71,11 +71,11 @@
 - **Bitline**: Vertical wire connecting storage nodes in a column to sensing logic.
 - **Multiplexer (MUX)**: Readout circuitry. Selects specific requested bits from the entirely activated row using column address.
 
-![2619b Memory Array|500](media/2619b_Memory_Array.png)
+<img src="media/2619b_Memory_Array.png" alt="2619b Memory Array" width="500">
 
 ## DRAM Subsystem Architecture
 
-![10-19_Bachelor/11_First_Year_Courses/11.05_Digital_Design_and_Computer_Architecture/11.05c_Summary/media/2619b DRAM Architecture|600](media/10-19_Bachelor/11_First_Year_Courses/11.05_Digital_Design_and_Computer_Architecture/11.05c_Summary/media/2619b_DRAM_Architecture.png)
+<img src="media/10-19_Bachelor/11_First_Year_Courses/11.05_Digital_Design_and_Computer_Architecture/11.05c_Summary/media/2619b_DRAM_Architecture.png" alt="10-19_Bachelor/11_First_Year_Courses/11.05_Digital_Design_and_Computer_Architecture/11.05c_Summary/media/2619b DRAM Architecture" width="600">
 
 1. **Channel**: Independent memory bus connecting CPU memory controller to memory modules.
 2. **DIMM (Dual In-line Memory Module)**: Physical printed circuit board (stick of RAM).
@@ -84,7 +84,7 @@
     - Uses **Chip Select (CS)** signal for differentiation (e.g., Front Rank vs. Back Rank).
     - Distributes data bus across chips (e.g., 64-bit bus formed by 8 chips outputting 8 bits each). Keeps individual chips cheap/low-pin.
 4. **Chip**: Individual integrated circuit on the DIMM.
-   ![2619b Memory Chip|500](media/2619b_Memory_Chip.png)
+   <img src="media/2619b_Memory_Chip.png" alt="2619b Memory Chip" width="500">
 5. **Bank**: Independent 2D memory array within a chip.
 6. **Subarray**: Internal logical partitions within a bank. Shortens bitlines/wordlines to minimize electrical latency.
 7. **Row/Column**: Lowest level addressing coordinates.
@@ -103,7 +103,7 @@
 - **Row Buffer Hit**: Requested row already open in row buffer. Requires only fast READ/WRITE column command.
 - **Row Buffer Conflict**: Requested row differs from currently open row. Requires slow sequence: PRECHARGE (close old row) $\rightarrow$ ACTIVATE (open new row) $\rightarrow$ READ/WRITE.
 
-![2619b DRAM Architecture 1|600](media/2619b_DRAM_Architecture_1.png)
+<img src="media/2619b_DRAM_Architecture_1.png" alt="2619b DRAM Architecture 1" width="600">
 
 ## Interleaving and Banking
 

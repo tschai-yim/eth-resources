@@ -96,4 +96,4 @@
     - **Bayesian updating**: $\frac{|VR_k| + \kappa p_k^{(s)}}{|VR| + \kappa}$.
         - **Inertia ($\kappa$)**: A tuning parameter (pseudo-count, e.g., $\kappa=5$) reflecting confidence in the prior ($p_k^{(s)}$). Higher $\kappa$ prevents sudden, erratic weight shifts caused by small or noisy user feedback sets.
 
-![10 Relevance Feedback Loop|600](media/10_Relevance_Feedback_Loop.png)
+<img src="media/10_Relevance_Feedback_Loop.png" alt="10 Relevance Feedback Loop" width="600">

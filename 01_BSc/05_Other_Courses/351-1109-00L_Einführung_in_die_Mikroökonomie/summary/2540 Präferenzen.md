@@ -18,46 +18,46 @@
     - Alle Punkte auf einer Kurve sind **gleichwertig**.
 - **Besserstellung**: **Höher liegende Kurven** bedeuten **streng bevorzugte** Bündel (höherer Nutzen).
 
-![2540 Indifferenzkurve|500](media/2540_Indifferenzkurve.png)
+<img src="media/2540_Indifferenzkurve.png" alt="2540 Indifferenzkurve" width="500">
 
 - **Eigenschaft**: Kurven unterschiedlicher Präferenzniveaus **können sich nicht schneiden**.
     - Ein Schnittpunkt würde die **Transitivitätsannahme** verletzen $\rightarrow$ widersprüchliche Präferenzordnung.
-    ![2540 Schneidende Indifferenzkurven|500](media/2540_Schneidende_Indifferenzkurven.png)
+    <img src="media/2540_Schneidende_Indifferenzkurven.png" alt="2540 Schneidende Indifferenzkurven" width="500">
 
 ## Formen von Indifferenzkurven und Güterarten
 
 - **Normale Güter**: Wenn beide Waren **"Güter"** sind ("mehr ist besser"), haben Indifferenzkurven eine **negative Steigung**.
 - **Ungüter**: Eine Ware, von der man lieber weniger hat ("weniger ist besser", z.B. Luftverschmutzung).
     - Kombination aus Gut & Ungut: **positive Steigung**.
-    ![2540 Ungüter|500](media/2540_Ungüter.png)
+    <img src="media/2540_Ungüter.png" alt="2540 Ungüter" width="500">
 - **Perfekte Substitute**: Als gleichwertig erachtete Güter, tauschbar zu einem **konstanten Verhältnis**.
     - Beispiel: Rote und blaue Bleistifte bei Farbpräferenzlosigkeit.
     - Indifferenzkurven: **Geraden** mit konstanter negativer Steigung (z.B. -1 bei 1:1-Tausch).
-    ![2540 Perfekte Substitute|500](media/2540_Perfekte_Substitute.png)
+    <img src="media/2540_Perfekte_Substitute.png" alt="2540 Perfekte Substitute" width="500">
 - **Perfekte Komplemente**: Güter, die immer in einem **konstanten Verhältnis** gemeinsam konsumiert werden.
     - Beispiel: Linker und rechter Schuh.
     - Indifferenzkurven: **L-förmig**; die Ecke markiert das erfüllte Konsumverhältnis.
-    ![2540 Perfekte Komplemente|500](media/2540_Perfekte_Komplemente.png)
+    <img src="media/2540_Perfekte_Komplemente.png" alt="2540 Perfekte Komplemente" width="500">
 - **Neutrale Güter**: Eine für den Konsumenten irrelevante Ware, die den Nutzen nicht beeinflusst.
     - Indifferenzkurven: **vertikale** oder **horizontale Linien**.
-    ![2540 Neutrale Güter|500](media/2540_Neutrale_Güter.png)
+    <img src="media/2540_Neutrale_Güter.png" alt="2540 Neutrale Güter" width="500">
 - **Sättigung (Blisspunkt)**: Ein optimales Güterbündel; eine Entfernung davon senkt den Nutzen.
     - Indifferenzkurven: **kreisförmig** um diesen Optimalpunkt.
-    ![2540 Blisspunkt|500](media/2540_Blisspunkt.png)
+    <img src="media/2540_Blisspunkt.png" alt="2540 Blisspunkt" width="500">
 - **Unteilbare Güter**: Nur in ganzen Einheiten erhältlich (z.B. Autos).
     - Indifferenz"kurve": eine **Menge diskreter Punkte**.
-    ![2540 Unteilbare Güter|500](media/2540_Unteilbare_Güter.png)
+    <img src="media/2540_Unteilbare_Güter.png" alt="2540 Unteilbare Güter" width="500">
 
 ## Präferenzen im Normalfall ("Well-behaved")
 
 - Zwei Annahmen für stetige und stabile Nachfragekurven:
 1. **Monotonie ("Mehr ist besser")**: Annahme der Unersättlichkeit des Konsumenten.
     - Folge: Indifferenzkurven haben eine **negative Steigung**.
-    ![2540 Monotonie|500](media/2540_Monotonie.png)
+    <img src="media/2540_Monotonie.png" alt="2540 Monotonie" width="500">
 2. **Konvexität ("Durchschnitte sind besser als Extreme")**: Ein Durchschnitt zweier indifferenter Bündel wird den Extremen vorgezogen.
     - **Zentrale Annahme**: Sichert die typische, nach innen gekrümmte Form (**Konvexität**) der Indifferenzkurven.
     - Beispiel: (5 CDs, 5 Kinobesuche) > (2 CDs, 8 Kinobesuche).
-    ![2540 Konvexität|500](media/2540_Konvexität.png)
+    <img src="media/2540_Konvexität.png" alt="2540 Konvexität" width="500">
 - **Strenge vs. schwache Konvexität**:
     - **Strenge Konvexität**: Durchschnitt **streng** bevorzugt ($>$); Kurve ist "rund" und hat **keine flachen Stellen**.
     - **Schwache Konvexität**: Durchschnitt **schwach** bevorzugt ($\ge$); Kurve kann **lineare Abschnitte** haben (z.B. bei perfekten Substituten).
@@ -66,7 +66,7 @@
 
 - **Definition**: Die **GRS** (oder **MRS**) ist die **Steigung der Indifferenzkurve** in einem Punkt.
     - Formel: $GRS = \frac{\Delta x_2}{\Delta x_1}$
-    ![2540 Grenzrate der Substitution|500](media/2540_Grenzrate_der_Substitution.png)
+    <img src="media/2540_Grenzrate_der_Substitution.png" alt="2540 Grenzrate der Substitution" width="500">
 - **Interpretation**:
     1. **Tauschverhältnis**: Rate, zu der ein Konsument bereit ist, Gut 2 für eine marginale Einheit von Gut 1 zu tauschen (bei gleichem Nutzen).
     2. **Marginale Zahlungsbereitschaft**: Bereitschaft, für mehr Gut 1 mit einer bestimmten Menge von Gut 2 zu "zahlen".

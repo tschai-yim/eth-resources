@@ -25,7 +25,7 @@
     - $MRS_A = MRS_B$.
 - **Kontraktkurve**: Verbindungslinie aller Pareto-effizienten Punkte.
 
-![2550 Edgeworth-Box|500](media/2550_Edgeworth-Box.png)
+<img src="media/2550_Edgeworth-Box.png" alt="2550 Edgeworth-Box" width="500">
 
 ## Produktion im allgemeinen Gleichgewicht
 
@@ -50,7 +50,7 @@
     - Gesamtnachfrage minus Gesamtangebot (Ausstattung).
     - $z(p) = D(p) - S(p)$.
     - Gleichgewicht: $z(p^*) = 0$.
-    - ![2550 Überschussnachfrage|600](media/2550_Überschussnachfrage.png)
+    - <img src="media/2550_Überschussnachfrage.png" alt="2550 Überschussnachfrage" width="600">
 - **Walras' Gesetz**:
     - **Wert** der aggregierten Überschussnachfrage ist bei **jedem** Preissystem **Null**.
     - $p \cdot z(p) = 0$.
@@ -60,7 +60,7 @@
     - Nutzung stetiger Preisanpassungsfunktion.
     - Jede stetige Abbildung einer kompakten, konvexen Menge auf sich selbst hat einen **Fixpunkt**.
     - Fixpunkt = Gleichgewichtspreisvektor.
-    - ![2550 Brouwers Fixpunktsatz|500](media/2550_Brouwers_Fixpunktsatz.png)
+    - <img src="media/2550_Brouwers_Fixpunktsatz.png" alt="2550 Brouwers Fixpunktsatz" width="500">
 
 ## Wohlfahrtstheoreme
 

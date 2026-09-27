@@ -3,7 +3,7 @@
 - **Transistors**: Fundamental building blocks of modern computers.
     - Act as simple logical switches (abstracts away complex analog physics).
 - **MOS Transistor**: **Metal-Oxide Semiconductor**.
-  ![2608b n-type and p-type|400](media/2608b_n-type_and_p-type.png)
+  <img src="media/2608b_n-type_and_p-type.png" alt="2608b n-type and p-type" width="400">
     - **N-type**:
         - **Gate = High Voltage (3V)** $\rightarrow$ **Circuit Closed** (Conducts/ON).
         - **Gate = Low Voltage (0V)** $\rightarrow$ **Circuit Open** (OFF).
@@ -32,7 +32,7 @@
 ## Logic Gates
 
 - **Basic Gates**:
-  ![2608b Basic Gates|600](media/2608b_Basic_Gates.png)
+  <img src="media/2608b_Basic_Gates.png" alt="2608b Basic Gates" width="600">
     - **Buffer**: Passes input unchanged.
     - **NOT (Inverter)**: Inverts input.
     - **AND / NAND**: Output 1 if all inputs 1 / Output 0 if all inputs 1.
@@ -40,13 +40,13 @@
     - **XOR / XNOR**: Output 1 if inputs differ / Output 1 if inputs match.
 - **CMOS Implementations**:
     - **Inverter**: One P-type top (pulls up to 1), one N-type bottom (pulls down to 0).
-      ![2608b Inverter Gate|200](media/2608b_Inverter_Gate.png)
+      <img src="media/2608b_Inverter_Gate.png" alt="2608b Inverter Gate" width="200">
     - **NAND Gate**: Two P-types in parallel (top), two N-types in series (bottom).
-      ![2608b NAND Gate|300](media/2608b_NAND_Gate.png)
+      <img src="media/2608b_NAND_Gate.png" alt="2608b NAND Gate" width="300">
     - **AND Gate Inefficiency**: Built via **NAND Gate + Inverter**. CMOS is inherently **inverting logic**, making AND gates larger (6 transistors) than NAND gates (4 transistors).
-      ![2608b AND Gate|400](media/2608b_AND_Gate.png)
+      <img src="media/2608b_AND_Gate.png" alt="2608b AND Gate" width="400">
 - **Tri-State Buffer**: Gateable switch preventing short circuits on shared wires.
-  ![2608b Tri-State Buffer|150](media/2608b_Tri-State_Buffer.png)![2608b Tri-State Buffer Gates|150](media/2608b_Tri-State_Buffer_Gates.png)
+  <img src="media/2608b_Tri-State_Buffer.png" alt="2608b Tri-State Buffer" width="150"><img src="media/2608b_Tri-State_Buffer_Gates.png" alt="2608b Tri-State Buffer Gates" width="150">
     - Inputs: Data, **Enable (E)**.
     - $E = 1 \rightarrow$ Output = Data.
     - $E = 0 \rightarrow$ Output = **Floating signal (Z)**.

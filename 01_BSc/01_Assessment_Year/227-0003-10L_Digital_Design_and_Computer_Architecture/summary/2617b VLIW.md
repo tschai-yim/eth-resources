@@ -23,7 +23,7 @@
 
 - **VLIW Compiler Legacy**: Optimizations originally for VLIW now standard in **superscalar** processors.
 - **Trace Scheduling**:
-	  ![2617b Trace Scheduling|500](media/2617b_Trace_Scheduling.png)
+	  <img src="media/2617b_Trace_Scheduling.png" alt="2617b Trace Scheduling" width="500">
     - Profilers identify high-probability execution paths (**hot paths**).
     - Combines basic blocks into one **Trace** for cross-instruction optimization.
     - **Limitation**: Traces have **side entrances** (multiple entry/exit points), hindering optimization.

@@ -52,7 +52,7 @@
     - **Reduce Phase (Inverters)**: Workers collect, sort, and write `docID`s for assigned terms.
 - **Core Concept**: **Bring the Query to the Data**. Process data on local storage machines minimizing network traffic.
 
-![05 MapReduce|500](media/05_MapReduce.png)
+<img src="media/05_MapReduce.png" alt="05 MapReduce" width="500">
 
 ## Dynamic Indexing
 

@@ -66,7 +66,7 @@
     - **Syntactic/Semantic Transfer**: Deeper analysis; **Lemmatization** operates here.
     - **Interlingua**: Deepest semantic representation.
 
-![03 Vauquois Triangle|600](media/03_Vauquois_Triangle.png)
+<img src="media/03_Vauquois_Triangle.png" alt="03 Vauquois Triangle" width="600">
 
 ## LLM Tokenization (Byte Pair Encoding)
 
@@ -77,7 +77,7 @@
     - **Result**: Common words become single tokens; rare words/names split into sub-word chunks (e.g., "Strawberry" $\rightarrow$ "Straw" + "berry").
     - **Consequence**: explains LLM inability to perform character-level tasks (e.g., counting letters).
 
-![03 Byte Pair Encoding|600](media/03_Byte_Pair_Encoding.png)
+<img src="media/03_Byte_Pair_Encoding.png" alt="03 Byte Pair Encoding" width="600">
 
 ## Optimization: Skip Lists
 
@@ -88,7 +88,7 @@
     - **Too short**: High comparison overhead.
     - **Too long**: Missed skipping opportunities.
 
-![03 Skip Lists|600](media/03_Skip_Lists.png)
+<img src="media/03_Skip_Lists.png" alt="03 Skip Lists" width="600">
 
 ## Phrase Queries & Positional Indexes
 

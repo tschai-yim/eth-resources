@@ -24,7 +24,7 @@
     - **Matrix Property**: The **sum of every column is exactly one** ($100\%$ outgoing weights).
     - **State Calculation**: Step $k+1$ probability found by multiplying **stochastic matrix** with step $k$ vector.
 
-![12 Random Surfer Model|600](media/12_Random_Surfer_Model.png)
+<img src="media/12_Random_Surfer_Model.png" alt="12 Random Surfer Model" width="600">
 
 ## Convergence & Diagonalization
 
@@ -36,7 +36,7 @@
     - Fixed point = **eigenvector associated with the eigenvalue one**.
     - Google initially built on diagonalizing these massive matrices.
 
-![12 Model Convergence|500](media/12_Model_Convergence.png)
+<img src="media/12_Model_Convergence.png" alt="12 Model Convergence" width="500">
 
 ## Damping & Teleportation
 

@@ -47,7 +47,7 @@
     - **LIFO (eigene Tasks)**: Thread legt neue Sub-Tasks oben auf eigenen Stack und arbeitet von oben ab (ideal für Rekursion, maximale **Cache-Lokalität**).
     - **Work Stealing / FIFO (fremde Tasks)**: Bei Leerlauf stiehlt Thread von **unten** aus fremder Deque. Erwischt älteste Tasks (grosser verbleibender Teilbaum) $\rightarrow$ minimaler Overhead, perfektes **Load Balancing**.
 
-![04 Fork Join Architektur|600](media/04_Fork_Join_Architektur.png)
+<img src="media/04_Fork_Join_Architektur.png" alt="04 Fork Join Architektur" width="600">
 
 ## Implementierung und Optimierung mit Fork/Join
 

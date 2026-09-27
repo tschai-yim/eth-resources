@@ -55,5 +55,5 @@
     - **Explizit erlaubt** (im Gegensatz zu C++: *Undefined Behavior* / Absturz).
     - **Dringende Warnung**: Niemals absichtlich nutzen! Immer **einfachste Lösung** (`synchronized`) präferieren, `volatile` nur bei extremer Performance-Kritikalität.
 
-![07 Synchronization Order|700](media/07_Synchronization_Order.png)
+<img src="media/07_Synchronization_Order.png" alt="07 Synchronization Order" width="700">
 ![07 Happens-Before](media/07_Happens-Before.png)

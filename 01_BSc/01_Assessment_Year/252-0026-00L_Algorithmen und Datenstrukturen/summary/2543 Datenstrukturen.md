@@ -37,7 +37,7 @@
 | `push` | $O(1)$ | $O(1)$ |
 | `pop` | $O(1)$ | $O(1)$ |
 
-![2543 Stapel|300](media/2543_Stapel.png)
+<img src="media/2543_Stapel.png" alt="2543 Stapel" width="300">
 
 ### Schlange (Queue)
 
@@ -46,7 +46,7 @@
     - `enqueue(k, S)`: Fügt k hinten an.
     - `dequeue(S)`: Entfernt & liefert vorderstes Element.
 - Mit **Array** als **Ringpuffer (Ring Buffer)**
-  ![2543 Ringbuffer|400](media/2543_Ringbuffer.png)
+  <img src="media/2543_Ringbuffer.png" alt="2543 Ringbuffer" width="400">
 - **Laufzeitvergleich**:
 
 | Operation | Array (Ringpuffer) | Verkettete Liste |
@@ -54,7 +54,7 @@
 | `enqueue` | $O(1)$             | $O(1)$           |
 | `dequeue` | $O(1)$             | $O(1)$           |
 
-![2543 Schlange|500](media/2543_Schlange.png)
+<img src="media/2543_Schlange.png" alt="2543 Schlange" width="500">
 
 ### Prioritätswarteschlange (Priority Queue)
 
@@ -101,10 +101,10 @@
 - **Struktur**: Elemente (**Knoten**) sind durch **Zeiger (Pointer)** verbunden; liegen verstreut im Speicher.
 - **Einfach verkettete Liste**: Jeder Knoten hat Zeiger auf Nachfolger.
     - `delete(O)` ist $O(n)$, da Vorgänger gefunden werden muss.
-    ![2543 Singly Linked List|400](media/2543_Singly_Linked_List.png)
+    <img src="media/2543_Singly_Linked_List.png" alt="2543 Singly Linked List" width="400">
 - **Doppelt verkettete Liste**: Jeder Knoten hat Zeiger auf Nachfolger **und Vorgänger**.
     - `delete(O)` ist $O(1)$ (bei bekanntem Ort).
-    ![2543 Doubly Linked List|450](media/2543_Doubly_Linked_List.png)
+    <img src="media/2543_Doubly_Linked_List.png" alt="2543 Doubly Linked List" width="450">
 - **Vorteile**:
     - **Flexibel**: `insert`/`delete` sind $O(1)$ (wenn Position bekannt).
     - **Dynamische Grösse**.
@@ -147,4 +147,4 @@
     - `findMin/findMax`: $O(\log n)$ (links/rechts absteigen).
     - `findKthSmallest`: $O(\log n)$ (wenn Knoten die Grösse ihrer Teilbäume speichern).
 
-![2543 2-3-Baum|700](media/2543_2-3-Baum.png)
+<img src="media/2543_2-3-Baum.png" alt="2543 2-3-Baum" width="700">

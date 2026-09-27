@@ -65,13 +65,13 @@ public Long pop() {
 ## Lock-Free List-Based Set
 
 - **Problem nativer CAS-Listen**: Gleichzeitiges Löschen benachbarter Knoten führt zu lautlosem Elementverlust.
-  ![12a Problematic mark bit approach|600](media/12a_Problematic_mark_bit_approach.png)
+  <img src="media/12a_Problematic_mark_bit_approach.png" alt="12a Problematic mark bit approach" width="600">
 - **Die Java-Lösung (`AtomicMarkableReference`)**:
     - *Erfordernis*: Atomares Update von Mark-Bit und Next-Pointer (natives **DCAS** fehlt in normaler Hardware).
     - **Bit-Klau Hack**: 64-Bit Pointer nutzt real nur 48 Bit physischen Speicher.
     - Freie Bits als **Mark Bit** missbraucht $\rightarrow$ Referenz und Flag in einem einzigen atomaren 64-Bit Wert.
 - **Zweistufiger Löschvorgang (`remove`)**:
-  ![12a List concurrent remove|600](media/12a_List_concurrent_remove.png)
+  <img src="media/12a_List_concurrent_remove.png" alt="12a List concurrent remove" width="600">
     - **Logical Delete**: Mark-Bit auf Next-Pointer setzen.
     - **Physical Delete**: Vorgänger-Pointer via CAS umhängen.
 - **Das Helper-Prinzip ("Helping")**:
@@ -124,7 +124,7 @@ public boolean remove(T item) {
     - Liest Wert *nach* dem Sentinel, rückt `head` vor.
     - Alter Sentinel $\rightarrow$ Garbage Collector, entnommener Knoten $\rightarrow$ neuer Sentinel.
 
-![12a Queue enqueue|600](media/12a_Queue_enqueue.png)
+<img src="media/12a_Queue_enqueue.png" alt="12a Queue enqueue" width="600">
 
 ```java
 public void enqueue(T item) {

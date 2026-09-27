@@ -33,7 +33,7 @@
     - **VLIW**: Packs multiple *independent, different* operations.
     - **SIMD Array**: Packs multiple *identical* operations (amortizes fetch/decode overhead).
 
-![2618a SIMD Processors|600](media/2618a_SIMD_Processors.png)
+<img src="media/2618a_SIMD_Processors.png" alt="2618a SIMD Processors" width="600">
 
 ## Vector Processors Fundamentals
 

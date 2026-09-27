@@ -29,7 +29,7 @@
 	     - **Nur ein Wunsch** an den OS-Scheduler (**keine Ausführungsgarantie**).
     - **Status**: Abfragbar (`getState()`).
 
-![01b Thread Lifecycle|700](media/01b_Thread_Lifecycle.png)
+<img src="media/01b_Thread_Lifecycle.png" alt="01b Thread Lifecycle" width="700">
 ## Warten, Exceptions und Abbruch
 
 - **Warten auf Threads**:

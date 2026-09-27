@@ -38,11 +38,11 @@
     - **Row Picture** (Fig. 1.7):
         - Each equation is a **line** in the $\lambda\mu$-plane. The solution is their **intersection point**.
         - Changing vector **u** causes a **parallel shift** of the lines. Non-parallel lines guarantee a unique intersection.
-        ![1 Row Picture|600](media/1_Row_Picture.png)
+        <img src="media/1_Row_Picture.png" alt="1 Row Picture" width="600">
     - **Column Picture** (Fig. 1.8):
         - Vectors **v** and **w** define a **skewed coordinate system**.
         - The target vector **u** is the diagonal of the **parallelogram** formed by the scaled vectors $\lambda v$ and $\mu w$.
-        ![1 Column Picture|600](media/1_Column_Picture.png)
+        <img src="media/1_Column_Picture.png" alt="1 Column Picture" width="600">
 
 ## Linear (In)dependence
 
@@ -104,4 +104,4 @@
 
 > **Lemma 1.28 (The span of m linearly independent vectors is $\mathbb{R}^m$).** Let $v_1, v_2, \dots, v_m \in \mathbb{R}^m$ be linearly independent. Then $Span(v_1, v_2, \dots, v_m) = \mathbb{R}^m$.
 
-![1 Span|600](media/1_Span.png)
+<img src="media/1_Span.png" alt="1 Span" width="600">

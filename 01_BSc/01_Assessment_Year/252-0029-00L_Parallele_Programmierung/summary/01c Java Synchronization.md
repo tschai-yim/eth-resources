@@ -38,7 +38,7 @@
 
 ## Koordination: Wait und Notify (Producer-Consumer)
 
-![01c Producer-Consumer|600](media/01c_Producer-Consumer.png)
+<img src="media/01c_Producer-Consumer.png" alt="01c Producer-Consumer" width="600">
 
 - **Producer-Consumer-Problem**: Producer füllt Puffer, Consumer leert ihn. Lese-Verbot bei leerem Puffer.
 - **Deadlock-Gefahr**: Aktives Warten in `while`-Schleife innerhalb `synchronized`-Block $\rightarrow$ Lock wird nie freigegeben $\rightarrow$ Producer für immer ausgesperrt.

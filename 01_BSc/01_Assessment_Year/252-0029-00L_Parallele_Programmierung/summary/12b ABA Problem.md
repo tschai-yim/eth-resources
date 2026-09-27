@@ -17,7 +17,7 @@
     5. Thread X wacht auf. CAS (`top == A`) erfolgreich.
     6. **Resultat**: X setzt veralteten `next`-Pointer. Knoten $B$ überschrieben (lautloser Datenverlust).
 
-![12b ABA-Problem|600](media/12b_ABA-Problem.png)
+<img src="media/12b_ABA-Problem.png" alt="12b ABA-Problem" width="600">
 
 ## Lösungsansätze
 
@@ -48,7 +48,7 @@
     - Vor Pool-Rückgabe: Prüfung des gesamten Arrays. (*Nachteil*: Teure $\mathcal{O}(n)$ Operation).
     - **Kein Memory Leak bei Mehrfach-Nutzung**: Haben mehrere Threads den Knoten im Hazard Array, wird er vorerst ignoriert. Der **letzte** Thread, der den Eintrag löscht, bemerkt das leere Array und legt den Knoten sicher in den Pool zurück (solange kein Thread stirbt).
 
-![12b Hazard Pointers|700](media/12b_Hazard_Pointers.png)
+<img src="media/12b_Hazard_Pointers.png" alt="12b Hazard Pointers" width="700">
 
 ## Schutz des Node Pools
 

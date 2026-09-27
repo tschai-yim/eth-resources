@@ -16,7 +16,7 @@
     - **I-type (Immediate)**: 16-bit immediate value.
     - **J-type (Jump)**: 26-bit immediate value.
 
-![2611b LC-3 Opcodes|400](media/2611b_LC-3_Opcodes.png)
+<img src="media/2611b_LC-3_Opcodes.png" alt="2611b LC-3 Opcodes" width="400">
 
 ## Data Types
 
@@ -40,7 +40,7 @@
         - **Pros**: Simple hardware implementation.
         - **Cons**: More instructions required for complex tasks.
 
-![2611b Semantic Gap|500](media/2611b_Semantic_Gap.png)
+<img src="media/2611b_Semantic_Gap.png" alt="2611b Semantic Gap" width="500">
 
 ## Addressing Modes
 

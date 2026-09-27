@@ -51,7 +51,7 @@
 - **Theorem 1: Der Initialzustand ist zwingend bivalent**:
     - *Beweis*: Start A(0) und B(1). Bei alleinigem Lauf von A zwingend Resultat $0$ (**Wait-free**). Bei alleinigem Lauf von B zwingend Resultat $1$. Entscheidung offen $\rightarrow$ bivalent.
 
-![13b Zustandsmodell|600](media/13b_Zustandsmodell.png)
+<img src="media/13b_Zustandsmodell.png" alt="13b Zustandsmodell" width="600">
 
 ### Der kritische Zustand (Critical State)
 

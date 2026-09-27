@@ -14,13 +14,13 @@
 
 - **Convolution Application**: Crucial for image processing and **Machine Learning** (e.g., **Convolutional Neural Networks / CNNs** like AlexNet, ResNet).
 - **1D/2D Hardware Design**:
-  ![2617c Systolic convolution|400](media/2617c_Systolic_convolution.png)
+  <img src="media/2617c_Systolic_convolution.png" alt="2617c Systolic convolution" width="400">
     - Utilizes specialized **Multiply and Accumulate (MAC)** hardware instead of standard ALUs.
     - **Weights ($W$)**: Pre-loaded, remain **stationary** inside each PE.
     - **Inputs ($X$)**: Flow unaltered through PEs ($X_{out} = X_{in}$).
     - **Outputs ($Y$)**: Accumulate mathematically passing through ($Y_{out} = Y_{in} + W \times X_{in}$).
     - **Opposing Data Flow**: Inputs ($X$) and partial sums ($Y$) flow in opposite directions (or at staggered speeds) so each input aligns sequentially with the correct partial sum at the exact right PE. Avoids massive global data broadcasting.
 - **2D Matrix Multiplication**:
-  ![2617c Systolic Matrix Multiplication|700](media/2617c_Systolic_Matrix_Multiplication.png)
+  <img src="media/2617c_Systolic_Matrix_Multiplication.png" alt="2617c Systolic Matrix Multiplication" width="700">
     - Requires staggered (delayed) inputs cycle-by-cycle ensuring correct rows/columns align at the specific PE simultaneously.
     - Computed matrices can remain directly in PE **accumulators**.

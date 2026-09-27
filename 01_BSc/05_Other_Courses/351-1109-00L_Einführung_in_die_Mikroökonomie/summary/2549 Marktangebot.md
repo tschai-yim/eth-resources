@@ -26,7 +26,7 @@
     - Grafisch: Fläche unter der Nachfragekurve und über dem Preis.
 - **Wohlfahrt**: Summe aus $CS + PS$.
 
-![2549 Produzenten- und Konsumentenrente.png|500](media/2549_Produzenten-_und_Konsumentenrente.png.png)
+<img src="media/2549_Produzenten-_und_Konsumentenrente.png.png" alt="2549 Produzenten- und Konsumentenrente.png" width="500">
 
 ## Steuern & Steuerinzidenz
 
@@ -45,7 +45,7 @@
     - **Kurzfristig**: Nachfrage unelastisch (Sucht) $\rightarrow$ Konsumenten tragen Last, Preise steigen.
     - **Langfristig**: Nachfrage elastischer (Rauchen aufhören) $\rightarrow$ Produzenten tragen Last.
 
-![2549 Steuern|500](media/2549_Steuern.png)
+<img src="media/2549_Steuern.png" alt="2549 Steuern" width="500">
 
 ## Langfristiges Marktangebot
 
@@ -99,4 +99,4 @@
     - **Allokationseffizienz**: Verwendung irrelevant. Steuer dient rein als **Preissignal** zur Mengensteuerung ($Q \rightarrow Q^*$).
     - **Kostendeckung**: Einnahmen ($\tau \cdot Q^*$) müssen nicht zwingend totale externe Kosten decken. Kein Einfluss auf Lenkungswirkung.
 
-![2549 Pigou-Steuern|600](media/2549_Pigou-Steuern.png)
+<img src="media/2549_Pigou-Steuern.png" alt="2549 Pigou-Steuern" width="600">

@@ -15,10 +15,10 @@
 ## Moore vs. Mealy FSMs
 
 - **Moore FSM**: Outputs depend **only** on current state.
-  ![2609b Moore FSM|500](media/2609b_Moore_FSM.png)
+  <img src="media/2609b_Moore_FSM.png" alt="2609b Moore FSM" width="500">
     - Diagram representation: Outputs written directly inside state circles.
 - **Mealy FSM**: Outputs depend on **both** current state and current inputs.
-  ![2609b Mealy FSM|500](media/2609b_Mealy_FSM.png)
+  <img src="media/2609b_Mealy_FSM.png" alt="2609b Mealy FSM" width="500">
     - Diagram representation: Outputs written on the transition arcs.
     - **Timing**: Outputs react immediately to input changes mid-cycle (combinational logic delay, making output changes asynchronous relative to the clock edge).
 
@@ -45,4 +45,4 @@
 - **5. Derive Boolean Logic**: Extract Sum-of-Products (SOP) equations for next-state and output bits.
 - **6. Draw Schematic**: Wire logic gates to D Flip-Flops.
 
-![2609b Traffic Light Example|700](media/2609b_Traffic_Light_Example.png)
+<img src="media/2609b_Traffic_Light_Example.png" alt="2609b Traffic Light Example" width="700">

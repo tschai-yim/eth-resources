@@ -43,7 +43,7 @@
 	- **`MPI_RECV`**: Blockierender Nachrichtenempfang.
 	- **`MPI_FINALIZE`**: Internen Systemzustand aufräumen (**zwingend letzter Aufruf**).
 
-![14 Rank in Communicators|300](media/14_Rank_in_Communicators.png)
+<img src="media/14_Rank_in_Communicators.png" alt="14 Rank in Communicators" width="300">
 
 ## Senden & Empfangen in MPI
 

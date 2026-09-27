@@ -28,7 +28,7 @@
     - **Inverse document frequency**: $idf_t = \log \frac{N}{df_t}$.
     - **TF-IDF weight**: $tf \times idf$. Boosts rare, highly discriminative terms.
 - **Vector Space Model (VSM)**:
-  ![07 Vector Space Model|500](media/07_Vector_Space_Model.png)
+  <img src="media/07_Vector_Space_Model.png" alt="07 Vector Space Model" width="500">
     - **Boolean mapping**: Terms form simplex vertices; documents form hypercube vertices.
     - **TF-IDF mapping**: Documents become vectors in the first quadrant of $\mathbb{R}^M$ ($M$ = vocabulary size).
     - **Renormalization**: Document vectors are divided by their **Euclidian norm** ($||x||$) to reach **unit length**.
@@ -102,4 +102,4 @@
     - Documents are ranked via a **Scoring module** (often using **Machine Learning Weights**).
     - Top results fetch preview snippets from a **Document cache** and are returned as final **Results**.
 
-![07 IR System Architecture|700](media/07_IR_System_Architecture.png)
+<img src="media/07_IR_System_Architecture.png" alt="07 IR System Architecture" width="700">

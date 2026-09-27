@@ -20,33 +20,33 @@
     - **Instruction & Data Memory**: Separate structures (resource replication required in single-cycle).
     - **Register File**: 32-element, 32-bit storage (2 read ports, 1 write port).
 
-![2612b Single-Cycle Microarchitecture|700](media/2612b_Single-Cycle_Microarchitecture.png)
+<img src="media/2612b_Single-Cycle_Microarchitecture.png" alt="2612b Single-Cycle Microarchitecture" width="700">
 
 ## Instruction-Specific Datapath Implementation
 
 - **R-Type ALU Instructions** (e.g., `ADD`):
-  ![2612b R-Type ALU Instruction|600](media/2612b_R-Type_ALU_Instruction.png)
+  <img src="media/2612b_R-Type_ALU_Instruction.png" alt="2612b R-Type ALU Instruction" width="600">
     - Read two source registers (bits `[25:21]`, `[20:16]`), write to destination register (bits `[15:11]`).
     - ALU uses **ALU operation** control signal derived from `funct` field.
 - **I-Type ALU Instructions** (e.g., `ADDI`):
-  ![2612b I-Type ALU Instruction|600](media/2612b_I-Type_ALU_Instruction.png)
+  <img src="media/2612b_I-Type_ALU_Instruction.png" alt="2612b I-Type ALU Instruction" width="600">
     - **Sign Extension Unit**: Converts 16-bit immediate to 32-bit.
     - **ALUSrc Multiplexer**: Selects ALU input 2 (register data vs. sign-extended immediate).
     - **RegDst Multiplexer**: Switches write-register destination from `rd` (R-Type) to `rt` (I-Type, bits `[20:16]`).
 - **Data Movement Instructions** (`LW` / `SW`):
     - **Load Word (LW)**: Address computed via ALU. **MemtoReg Multiplexer** routes Data Memory output to register writeback.
-      ![2612b Load Word Instruction|600](media/2612b_Load_Word_Instruction.png)
+      <img src="media/2612b_Load_Word_Instruction.png" alt="2612b Load Word Instruction" width="600">
     - **Store Word (SW)**: Forces `RegWrite = 0`. No register write makes the `RegDst` multiplexer state a **"don't care"**, simplifying logic.
-      ![2612b Store Word Instruction|600](media/2612b_Store_Word_Instruction.png)
+      <img src="media/2612b_Store_Word_Instruction.png" alt="2612b Store Word Instruction" width="600">
 - **Control Flow Instructions** (`JUMP`, `BEQ`):
     - **Conditional Branch (BEQ)**:
-      ![2612b Branch (not taken) Instruction|600](media/2612b_Branch_(not_taken)_Instruction.png)
+      <img src="media/2612b_Branch_(not_taken" alt="2612b Branch (not taken) Instruction" width="600">_Instruction.png)
         - Dedicated adder computes branch target ($PC+4 + sign\_extend(immediate) \times 4$).
         - ALU subtracts registers; asserts **Zero flag** if equal.
         - Control logic toggles **PCSrc** multiplexer via Zero flag.
         - Requires **Delayed branch semantics** (executing next sequential instruction regardless of branch outcome) for pipelining.
     - **Unconditional Jump (J)**:
-      ![2612b Jump Instruction|600](media/2612b_Jump_Instruction.png)
+      <img src="media/2612b_Jump_Instruction.png" alt="2612b Jump Instruction" width="600">
         - Target calculated by concatenating 26-bit immediate with two trailing zeros (`00`).
         - **Common Mistake Warning**: The 4 MSBs for concatenation must strictly come from **$PC + 4$**, not the un-incremented $PC$.
 

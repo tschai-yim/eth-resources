@@ -11,7 +11,7 @@
     - **Breiter Graph**: Hoher Parallelismus (kurzer $T_\infty$).
     - **Tiefer Graph**: Viele sequenzielle Abhängigkeiten (langer $T_\infty$, geringes Speedup).
 
-![05 Fibonacci DAG|500](media/05_Fibonacci_DAG.png)
+<img src="media/05_Fibonacci_DAG.png" alt="05 Fibonacci DAG" width="500">
 
 ## Schranken und Zuständigkeiten
 
@@ -47,7 +47,7 @@
         - **Rechtes Kind**: Erhält `fromLeft` des Parents **+** Bereichssumme des linken Geschwisters (aus Pass 1).
         - **Blattebene**: Resultat-Schreiben ($output[i] = fromLeft + input[i]$).
 
-![05 Prefix-Sum|623](media/05_Prefix-Sum.png)
+<img src="media/05_Prefix-Sum.png" alt="05 Prefix-Sum" width="623">
 
 ## Algorithmus: Pack (Filter)
 

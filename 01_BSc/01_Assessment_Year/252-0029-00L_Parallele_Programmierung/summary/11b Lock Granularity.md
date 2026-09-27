@@ -18,10 +18,10 @@
 
 - **Idee**: Objekt-Aufteilung in kleine Teile mit **separaten Locks**.
 - **Lösch-Gefahr**: Naives Locken einzelner Knoten führt zu Elementverlust (z.B. Thread A löscht `c`, Thread B zeitgleich `b`).
-  ![11b Lösch Gefahr bei naives Locken|600](media/11b_Lösch_Gefahr_bei_naives_Locken.png)
+  <img src="media/11b_Lösch_Gefahr_bei_naives_Locken.png" alt="11b Lösch Gefahr bei naives Locken" width="600">
     - Ursache: Zeitgleiches Schreiben eines Knotens und Lesen des nächsten.
 - **Lösung: Hand-over-hand locking**:
-  ![11b Hand-over-hand|600](media/11b_Hand-over-hand.png)
+  <img src="media/11b_Hand-over-hand.png" alt="11b Hand-over-hand" width="600">
     - Listen-Durchlauf ("Hangeln") mit **immer** zwei gelockten Knoten.
     - Lock-Paar: Vorgänger (**Pred**) und aktueller Knoten (**Curr**).
 - **Nachteile**:
@@ -43,7 +43,7 @@
     - **Not starvation-free**: Endloses Pech bei anhaltenden Validierungs-Konflikten möglich.
     - `contains()` erfordert weiterhin Locks.
 
-![11b Reachable Check|600](media/11b_Reachable_Check.png)
+<img src="media/11b_Reachable_Check.png" alt="11b Reachable Check" width="600">
 
 ## Lazy Synchronization (Lazy List)
 
@@ -61,7 +61,7 @@
     - Automatischer Schleifen-Neustart bei Konflikt/Markierung.
     - `contains()` **komplett wait-free** (Marker als Serialisierungspunkt, gänzlich ohne Locks).
 
-![11b Lazy Synchronization|600](media/11b_Lazy_Synchronization.png)
+<img src="media/11b_Lazy_Synchronization.png" alt="11b Lazy Synchronization" width="600">
 
 ## Skip Lists
 
@@ -80,5 +80,5 @@
     - Sehr fehleranfällige Implementierung.
     - Hoher Speicherbedarf (Arrays von Turm-Pointern pro Knoten).
 
-![11b Skip Lists|600](media/11b_Skip_Lists.png)
+<img src="media/11b_Skip_Lists.png" alt="11b Skip Lists" width="600">
 

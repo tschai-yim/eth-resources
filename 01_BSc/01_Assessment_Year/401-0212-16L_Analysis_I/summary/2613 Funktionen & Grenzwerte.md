@@ -42,7 +42,7 @@
     - **Satz Monotonie $\Rightarrow$ Injektivität**: Jede streng monotone Funktion ist zwingend injektiv [^sat4.12].
         - *Beweisidee (Widerspruch)*: Annahme $x_1 < x_2$ mit $f(x_1) = f(x_2)$ verletzt zwingende Ungleichung ($<$ oder $>$) der strengen Monotonie.
     - **Graphenkrümmung** [^def4.13]:
-      ![2613 Konkav und Konvex|300](media/2613_Konkav_und_Konvex.png)
+      <img src="media/2613_Konkav_und_Konvex.png" alt="2613 Konkav und Konvex" width="300">
         - **Konvex** (linksgekrümmt): Linkskurve, verläuft **unterhalb** Sekante (Beispiel: $x^2$).
         - **Konkav** (rechtsgekrümmt): Rechtskurve, verläuft **oberhalb** Sekante (Beispiel: $-x^2$).
 
@@ -54,7 +54,7 @@
     - **Definiertheit**: Funktion muss bei $x_0$ **nicht definiert** sein.
     - **Hebbare Definitionslücke**: Limes existiert, Funktion unbestimmt. Stetige Fortsetzung durch Setzen von $\tilde{f}(x_0) = L$ möglich.
     - **Sprungstelle**: Unterschiedliche Annäherungswerte $\to$ allgemeiner Grenzwert existiert nicht.
-      ![2613 Sprungstelle|300](media/2613_Sprungstelle.png)
+      <img src="media/2613_Sprungstelle.png" alt="2613 Sprungstelle" width="300">
 - **Spezifische Annäherungen**
     - **Einseitige Grenzwerte** [^def4.18]:
         - **Rechtsseitig**: Annäherung von oben ($x > x_0$ bzw. $x \ge x_0$).

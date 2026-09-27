@@ -54,9 +54,9 @@
 - **Ableitungsschritt** ("derivation step"): Ersetzen eines Nonterminals (LHS) durch seine Definition (RHS).
 - Darstellungsformen:
     - **Ableitungstabelle**: Schrittweise Ersetzung von der Startregel bis zum fertigen Wort.
-      ![01 Ableitungstabelle|600](media/01_Ableitungstabelle.png)
+      <img src="media/01_Ableitungstabelle.png" alt="01 Ableitungstabelle" width="600">
     - **Ableitungsbaum**: Hierarchische Darstellung (Wurzel = Startregel, Blätter = Terminale).
-      ![01 Ableitungsbaum|600](media/01_Ableitungsbaum.png)
+      <img src="media/01_Ableitungsbaum.png" alt="01 Ableitungsbaum" width="600">
 
 ## Grafische Darstellung (Syntax-Graphen)
 
@@ -64,15 +64,15 @@
 - Ein gültiges Wort entspricht einem Pfad durch den Graphen von links nach rechts.
 - Darstellung der Kontrollformen:
     - **Aufreihung**: Serielle Anordnung der Elemente.
-      ![01 Aufreihung Graph|200](media/01_Aufreihung_Graph.png)
+      <img src="media/01_Aufreihung_Graph.png" alt="01 Aufreihung Graph" width="200">
     - **Auswahl**: Parallele Pfade, von denen einer gewählt wird.
-      ![01 Auswahl Graph|200](media/01_Auswahl_Graph.png)
+      <img src="media/01_Auswahl_Graph.png" alt="01 Auswahl Graph" width="200">
     - **Option**: Ein Pfad mit Umgehungsmöglichkeit für ein Element.
-      ![01 Option Graph|200](media/01_Option_Graph.png)
+      <img src="media/01_Option_Graph.png" alt="01 Option Graph" width="200">
     - **Wiederholung**: Eine Schleife (Loop) zurück zum Anfang des Elements.
-      ![01 Wiederholung Graph|200](media/01_Wiederholung_Graph.png)
+      <img src="media/01_Wiederholung_Graph.png" alt="01 Wiederholung Graph" width="200">
 
-![01 Graph|600](media/01_Graph.png)
+<img src="media/01_Graph.png" alt="01 Graph" width="600">
 
 ## Rekursion
 

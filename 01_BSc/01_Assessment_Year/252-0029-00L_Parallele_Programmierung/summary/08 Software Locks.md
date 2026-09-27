@@ -87,7 +87,7 @@
 ## Formelle Beweisführung (Peterson)
 
 - **Intervall-Notation & Atomare Register**:
-  ![08 Interval Notation|500](media/08_Interval_Notation.png)
+  <img src="media/08_Interval_Notation.png" alt="08 Interval Notation" width="500">
     - Befehls-Dauer = Intervall zwischen Start und Antwort.
     - **Ordnung (Precedence)**: $I_A \rightarrow I_B$ (Intervall A endet vor Start B).
     - Überlappende Intervalle = **concurrent**.

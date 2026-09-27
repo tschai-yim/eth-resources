@@ -8,10 +8,10 @@
     - **Eigenschaft**: Die **Anfangsausstattung** ($\omega$) liegt **immer auf der Budgetgeraden**.
     - **Preisänderungen**: Führen zu einer **Drehung der Budgetgeraden um den Ausstattungspunkt ($\omega$)**.
 
-![2544 Budgetgerade mit Ausstattung|500](media/2544_Budgetgerade_mit_Ausstattung.png)
+<img src="media/2544_Budgetgerade_mit_Ausstattung.png" alt="2544 Budgetgerade mit Ausstattung" width="500">
 
 - **Preis-Konsumkurve**: Verbindet alle optimalen Bündel bei variierenden Preisen und verläuft durch den Ausstattungspunkt.
-  ![2544 Preis-Konsumkurve|600](media/2544_Preis-Konsumkurve.png)
+  <img src="media/2544_Preis-Konsumkurve.png" alt="2544 Preis-Konsumkurve" width="600">
 
 ## Brutto- und Nettonachfrage
 
@@ -21,7 +21,7 @@
     - **Negativ ($x_i < \omega_i$)**: Konsument ist **Nettoverkäufer** / Nettoanbieter.
 - Der Gesamtwert der Nettonachfragen ist immer null: $p_1(x_1 - \omega_1) + p_2(x_2 - \omega_2) = 0$.
 
-![2544 Bruttonachfrage|600](media/2544_Bruttonachfrage.png)
+<img src="media/2544_Bruttonachfrage.png" alt="2544 Bruttonachfrage" width="600">
 
 ## Analyse von Preiseffekten
 
@@ -30,11 +30,11 @@
 - Die Nutzenänderung (**Wohlfahrt**) bei einer Preisänderung hängt von der Marktposition (Käufer/Verkäufer) ab.
 - Bei einer **Preissenkung** von Gut 1:
     - **Nettokäufer**: Der Nutzen **steigt zwingend** (muss Käufer bleiben, erreicht höhere Indifferenzkurve).
-      ![2544 Preissenkung Nettokäufer|400](media/2544_Preissenkung_Nettokäufer.png)
+      <img src="media/2544_Preissenkung_Nettokäufer.png" alt="2544 Preissenkung Nettokäufer" width="400">
     - **Nettoverkäufer**:
         - Bleibt Verkäufer $\rightarrow$ Nutzen **sinkt**, da der Wert der Ausstattung sinkt.
         - Wird zum Käufer $\rightarrow$ Nutzenänderung ist **unklar**.
-        ![2544 Preissenkung Nettoverkäufer|400](media/2544_Preissenkung_Nettoverkäufer.png)
+        <img src="media/2544_Preissenkung_Nettoverkäufer.png" alt="2544 Preissenkung Nettoverkäufer" width="400">
 
 ### Die erweiterte Slutsky-Gleichung
 
@@ -48,7 +48,7 @@
     - $\frac{\Delta x_1^m}{\Delta m}$: **Reine Einkommensreaktion**, Nachfrageänderung bei Einkommensänderung (positiv für normale Güter).
     - $(\omega_1 - x_1)$: **Nettonachfrage**.
 
-![2544 Erweiterte Slutsky-Zerlegung|600](media/2544_Erweiterte_Slutsky-Zerlegung.png)
+<img src="media/2544_Erweiterte_Slutsky-Zerlegung.png" alt="2544 Erweiterte Slutsky-Zerlegung" width="600">
 
 ### Berechnung der Effekte
 
@@ -78,7 +78,7 @@
 - **Budgetbeschränkung**: $pC + wR = p\bar{C} + w\bar{L}$.
 - Die Steigung der Budgetgeraden im (R, C)-Diagramm ist der **Reallohn** ($-w/p$).
 
-![2544 Arbeitsangebot|600](media/2544_Arbeitsangebot.png)
+<img src="media/2544_Arbeitsangebot.png" alt="2544 Arbeitsangebot" width="600">
 
 ### Analyse von Lohnänderungen
 
@@ -88,11 +88,11 @@
 - **Rückwärtsgeneigte Arbeitsangebotskurve**:
     - Bei **niedrigem Lohn**: SE dominiert $\rightarrow$ mehr Arbeit bei Lohnerhöhung.
     - Bei **hohem Lohn**: EE kann dominieren $\rightarrow$ weniger Arbeit bei Lohnerhöhung.
-    ![2544 Rückwärts geneigte Arbeitsangebotskurve|600](media/2544_Rückwärts_geneigte_Arbeitsangebotskurve.png)
+    <img src="media/2544_Rückwärts_geneigte_Arbeitsangebotskurve.png" alt="2544 Rückwärts geneigte Arbeitsangebotskurve" width="600">
 - **Bedingungsloses Grundeinkommen (BGE)**:
     - Reiner Einkommenseffekt $\rightarrow$ erhöht Freizeit, senkt das Arbeitsangebot.
-    ![2544 Bedingungsloses Grundeinkommen|400](media/2544_Bedingungsloses_Grundeinkommen.png)
+    <img src="media/2544_Bedingungsloses_Grundeinkommen.png" alt="2544 Bedingungsloses Grundeinkommen" width="400">
 - **Überstundenzuschlag**:
     - Führt zu einem **Knick in der Budgetgeraden**.
     - Verstärkt den SE an der Marge, weshalb das Arbeitsangebot **eher zunimmt**.
-    ![2544 Überstundenzuschlag|600](media/2544_Überstundenzuschlag.png)
+    <img src="media/2544_Überstundenzuschlag.png" alt="2544 Überstundenzuschlag" width="600">

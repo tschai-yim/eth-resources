@@ -81,7 +81,7 @@
     5. Lokales Write-Set in globalen Speicher publizieren (Timestamp auf neue Zeit setzen).
     6. **Locks freigeben**.
 
-![13c STM write-based abort|700](media/13c_STM_write-based_abort.png)
+<img src="media/13c_STM_write-based_abort.png" alt="13c STM write-based abort" width="700">
 
 ## Praxis, `STM.retry()` & Limitationen
 
@@ -94,7 +94,7 @@
     - **Semantik:** Sofortiger Abort, Rollback und Pausieren des Threads.
     - **Weck-Bedingung:** Automatischer Neustart **nur**, wenn Dritte eine Variable aus dem eigenen **Read-Set** verändern.
 - **Dining Philosophers mit TM:**
-  ![13c Dining Philosophers|300](media/13c_Dining_Philosophers.png)
+  <img src="media/13c_Dining_Philosophers.png" alt="13c Dining Philosophers" width="300">
     - Trivial lösbar, garantierte Deadlock-Freiheit durch System.
     - **Nachteil:** Ineffizient (Thread weckt fälschlicherweise schon auf, wenn nur *eine* Gabel frei wird $\rightarrow$ sofortiger Re-Abort).
     - Java-Ablauf für einen Philosophen:

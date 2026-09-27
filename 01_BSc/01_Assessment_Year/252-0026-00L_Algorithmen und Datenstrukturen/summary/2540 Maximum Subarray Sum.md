@@ -8,7 +8,7 @@
 - **Elementare Operation**: **Addition**.
 - **Untere Schranke**: $\Omega(n)$, da jedes Element mindestens einmal betrachtet werden muss.
 
-![2540 Kursveränderung|500](media/2540_Kursveränderung.png)
+<img src="media/2540_Kursveränderung.png" alt="2540 Kursveränderung" width="500">
 
 ## Algorithmen & Analyse
 
@@ -57,7 +57,7 @@
     2. `randmax`: Beste Teilsumme, die am **aktuellen Element endet** (beste Suffixsumme).
 - **Beobachtung**: Beste Suffixsumme bei `i` (`randmax_i`) = $\max(a_i, \text{randmax}_{i-1} + a_i)$.
 
-![2540 Kadane's Algorithm|700](media/2540_Kadane's_Algorithm.png)
+<img src="media/2540_Kadane's_Algorithm.png" alt="2540 Kadane's Algorithm" width="700">
 
 - **Umsetzung**:
     - Initialisiere `max = 0` und `randmax = 0`.

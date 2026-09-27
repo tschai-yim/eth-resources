@@ -2,7 +2,7 @@
 
 The product $Ax$ of an $m \times n$ matrix $A$ and a vector $x \in \mathbb{R}^n$ yields an output vector in $\mathbb{R}^m$.
 
-![2 Matrix vector multiplication|200](media/2_Matrix_vector_multiplication.png)
+<img src="media/2_Matrix_vector_multiplication.png" alt="2 Matrix vector multiplication" width="200">
 
 **Three crucial interpretations**:
 
@@ -33,9 +33,9 @@ The product $Ax$ of an $m \times n$ matrix $A$ and a vector $x \in \mathbb{R}^n$
     - **Examples**:
         - **Rotation**: $A=\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}$ rotates vectors in $\mathbb{R}^2$ by 90 degrees counter-clockwise. For any vector $v$, $Av$ is orthogonal to $v$.
         - **Shear/Stretch**: Matrices can scale coordinates or skew shapes.
-        ![2 Rotation and shear|600](media/2_Rotation_and_shear.png)
+        <img src="media/2_Rotation_and_shear.png" alt="2 Rotation and shear" width="600">
         - **Parallel Projection**: An $m \times n$ matrix with $m < n$ projects vectors into a lower-dimensional space. Parallel lines remain parallel.
-          ![2 Projection|600](media/2_Projection.png)
+          <img src="media/2_Projection.png" alt="2 Projection" width="600">
     - **Non-Example**: **Perspective projection** (like a photograph) is **not** linear because it does not preserve parallelism.
 
 ## Kernel and Image of Linear Transformations

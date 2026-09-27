@@ -31,7 +31,7 @@
     - **Memory Data Register (MDR)**: Buffers data read from or written to memory.
     - Dedicated latches for intermediate ALU outputs (e.g., `ALUOut`).
 
-![2613a Multi-Cycle Wiring|700](media/2613a_Multi-Cycle_Wiring.png)
+<img src="media/2613a_Multi-Cycle_Wiring.png" alt="2613a Multi-Cycle Wiring" width="700">
 
 ## Multi-Cycle Control Logic (FSM)
 
@@ -50,7 +50,7 @@
     - **Cycle 4 (S3: Memory Read)**: Reads data from the effective address in memory into the `MDR`.
     - **Cycle 5 (S4: Writeback)**: Writes the data from `MDR` back to the destination register (`rt`).
 
-![2613a Control Logic FSM|700](media/2613a_Control_Logic_FSM.png)
+<img src="media/2613a_Control_Logic_FSM.png" alt="2613a Control Logic FSM" width="700">
 
 ## Handling Realistic Memory
 

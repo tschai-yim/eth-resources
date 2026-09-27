@@ -30,7 +30,7 @@
     2. **Branch Direction**: Predict Taken (T) or Not Taken (NT).
     3. **Branch Target Address**: Predict destination address if Taken.
 
-![2617a Branch Prediction Schema|600](media/2617a_Branch_Prediction_Schema.png)
+<img src="media/2617a_Branch_Prediction_Schema.png" alt="2617a Branch Prediction Schema" width="600">
 
 ## Target Address Prediction
 

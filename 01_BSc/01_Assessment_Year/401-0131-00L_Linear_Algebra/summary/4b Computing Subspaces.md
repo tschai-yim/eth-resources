@@ -4,7 +4,7 @@
 - **Basis**: A minimal, finite description of these (often infinite) vector spaces.
 - Key computation tool: **Gauss-Jordan elimination** to find the unique **Reduced Row Echelon Form (RREF)**, denoted $R$.
 
-![4 Subspaces from RREF|600](media/4_Subspaces_from_RREF.png)
+<img src="media/4_Subspaces_from_RREF.png" alt="4 Subspaces from RREF" width="600">
 
 ### Finding a Basis for the Column Space C(A)
 

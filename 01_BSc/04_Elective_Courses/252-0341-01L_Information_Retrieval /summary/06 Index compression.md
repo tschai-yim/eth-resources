@@ -17,13 +17,13 @@
 ## Term Statistics and Distribution Laws
 
 - **Heaps' Law** (Estimating the number of terms):
-  ![06 Heaps' Law|500](media/06_Heaps'_Law.png)
+  <img src="media/06_Heaps'_Law.png" alt="06 Heaps' Law" width="500">
     - Models vocabulary size as a function of collection size.
     - Formula: $M = kT^b$ ($M$ = distinct terms, $T$ = total tokens).
     - Parameters: $30 \le k \le 100$ and $b \approx 0.5$ (demonstrates **square root growth**).
     - Implies infinite vocabulary growth (never caps out) due to proper nouns, names, and new internet text.
 - **Zipf's Law** (Modeling the distribution of terms):
-  ![06 Zipf's Law|500](media/06_Zipf's_Law.png)
+  <img src="media/06_Zipf's_Law.png" alt="06 Zipf's Law" width="500">
     - Models collection frequency ($cf_i$) based on term rank ($i$).
     - Formula: $cf_i \propto 1/i$ or $cf_i = c/i$.
     - Frequency halves as rank doubles.
@@ -33,25 +33,25 @@
 ## Dictionary Compression Strategies
 
 - **Approach 1: Fixed-width Array**:
-  ![06 Fixed-width Array Dictionary|300](media/06_Fixed-width_Array_Dictionary.png)
+  <img src="media/06_Fixed-width_Array_Dictionary.png" alt="06 Fixed-width Array Dictionary" width="300">
     - Static size per term (e.g., 20 bytes string, 4 bytes frequency, 4 bytes pointer).
     - **Issue**: Highly wasteful for short words (avg English word = 8 chars); truncates long words (e.g., *supercalifragilisticexpialidocious*).
     - Size example (Reuters-RCV1): 11.2 MB.
 - **Approach 2: Dictionary-as-a-string**:
-  ![06 Dictionary-as-a-string|400](media/06_Dictionary-as-a-string.png)
+  <img src="media/06_Dictionary-as-a-string.png" alt="06 Dictionary-as-a-string" width="400">
     - Single concatenated string for all terms.
     - Array of pointers (e.g., 3 bytes each) marks term starts; length deduced from adjacent pointer.
     - Saves space (avg 11 bytes per term instead of 20).
     - Size example: 7.6 MB.
 - **Approach 3: Blocked storage**:
-  ![06 Blocked storage Dictionary|400](media/06_Blocked_storage_Dictionary.png)
+  <img src="media/06_Blocked_storage_Dictionary.png" alt="06 Blocked storage Dictionary" width="400">
     - Groups terms into blocks of size $k$ (e.g., $k=4$).
     - Single string pointer per block (for the first term).
     - 1-byte length prefix prepended to each string for internal block traversal.
     - **Space-time tradeoff**: Reduces pointer space by factor of $k$, but requires linear scan within block after initial binary search.
     - Size example ($k=4$): 7.1 MB.
 - **Approach 4: Front coding**:
-  ![06 Front coding Dictionary|400](media/06_Front_coding_Dictionary.png)
+  <img src="media/06_Front_coding_Dictionary.png" alt="06 Front coding Dictionary" width="400">
     - Shares common prefixes between consecutive alphabetically sorted terms (e.g., *automat*ion, *automat*ic).
     - Uses special delimiters to reference previous prefix.
     - Size example: 5.9 MB ($\approx 50\%$ reduction from fixed-width).
@@ -59,7 +59,7 @@
 ## Postings File Compression
 
 - **Gap Encoding**:
-  ![06 Gap Encoding|600](media/06_Gap_Encoding.png)
+  <img src="media/06_Gap_Encoding.png" alt="06 Gap Encoding" width="600">
     - Standard absolute `docID`s waste space (e.g., 32 bits per integer).
     - Sorted postings lists allow storing **gaps** (differences) between consecutive `docID`s.
     - Frequent terms = tiny gaps; rare terms = massive gaps. Requires **variable gap size** encodings.
@@ -67,7 +67,7 @@
     - No valid code word is a prefix of another valid code word.
     - Decoder deduces exactly **when to stop** reading bits without explicit separators (e.g., phone numbers, UTF-8).
 - **Variable Byte (VB) Encoding**:
-  ![06 Variable Byte Encoding|400](media/06_Variable_Byte_Encoding.png)
+  <img src="media/06_Variable_Byte_Encoding.png" alt="06 Variable Byte Encoding" width="400">
     - Uses integral number of bytes (or packets, like 4-bit nibbles) per gap.
     - **Structure** (8-bit packet): 1 **continuation bit** + 7 **payload bits**.
         - `1`: Ends here (last byte of gap).
@@ -116,4 +116,4 @@
     4. Encode the mantissa in binary chunks.
 - **Key Advantage**: Preserves **lexicographical order**. Allows physical bit-sequence comparisons for range queries without decoding values.
 
-![06 Decimal Gamma|700](media/06_Decimal_Gamma.png)
+<img src="media/06_Decimal_Gamma.png" alt="06 Decimal Gamma" width="700">

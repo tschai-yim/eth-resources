@@ -2,7 +2,7 @@
 
 - **Core Concept**: Product of matrices $A, B$ represents the **composition of their linear transformations**. [^2.33] [^2.34]
     - $T_{AB} = T_A \circ T_B$: first apply $T_B$, then $T_A$. [^2.37]
-    ![2 Compose linear transormations|500](media/2_Compose_linear_transormations.png)
+    <img src="media/2_Compose_linear_transormations.png" alt="2 Compose linear transormations" width="500">
 - **Definition**: For an $a \times n$ matrix $A$ and an $n \times b$ matrix $B$.
     - **Requirement**: Columns of $A$ = Rows of $B$.
     1. **Column Notation**: $j$-th column of $AB$ is $A$ times the $j$-th column of $B$. [^2.35] [^2.36]
@@ -22,7 +22,7 @@
 - **Unifying View**: Multiplications with vectors, covectors, and scalars are computationally equivalent to matrix multiplication.
     - Treat vectors as $m \times 1$ matrices, covectors as $1 \times n$ matrices.
 
-![2 Everything is matrix multiplication|700](media/2_Everything_is_matrix_multiplication.png)
+<img src="media/2_Everything_is_matrix_multiplication.png" alt="2 Everything is matrix multiplication" width="700">
 
 - **"Mixed" Multiplications**:
     - **Covector-Matrix**: $y^T A$ results in a new covector. [^2.43]
@@ -35,7 +35,7 @@
         - Efficient way: $(v^T w)(v^T w) = (v^T w)^2$ (scalar product first).
     - Optimal order for long products found via **dynamic programming**.
 
-![2 Multiplication Efficiency|600](media/2_Multiplication_Efficiency.png)
+<img src="media/2_Multiplication_Efficiency.png" alt="2 Multiplication Efficiency" width="600">
 
 ## CR-Decomposition
 
@@ -49,7 +49,7 @@
     - **Example**: A $1000 \times 1000$ matrix ($10^6$ entries) of rank $r=10$ needs only $(1000+1000) \cdot 10 = 20,000$ entries (50x reduction).
     - Allows for more efficient computations, e.g., $Ax$ as $C(R'x)$.
 
-![2 CR-Decomposition|400](media/2_CR-Decomposition.png)
+<img src="media/2_CR-Decomposition.png" alt="2 CR-Decomposition" width="400">
 
 [^2.33]: **Definition 2.33 (Composition of functions).** Let $g : X \to Y$ and $f : Y \to Z$ be two functions where $X, Y, Z$ are arbitrary sets. The function $h : X \to Z$, $h : x \mapsto f(g(x))$ is the composition of $f$ and $g$, written as $f \circ g$ ("first apply $g$, then $f$").
 [^2.34]: **Lemma 2.34 (Composition of matrix transformations).** Let $T_B : \mathbb{R}^b \to \mathbb{R}^n$ and $T_A : \mathbb{R}^n \to \mathbb{R}^a$ be two matrix transformations. The composition $T_A \circ T_B : \mathbb{R}^b \to \mathbb{R}^a$ ("first do $T_B$, then $T_A$") is another matrix transformation.

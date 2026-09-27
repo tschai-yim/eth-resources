@@ -41,7 +41,7 @@
 > **Definition 1.3 (Scalar multiplication)**
 > Let $v = \begin{pmatrix} v_1 \\ \vdots \\ v_m \end{pmatrix} \in \mathbb{R}^m, \lambda \in \mathbb{R}$. The vector $\lambda v := \begin{pmatrix} \lambda v_1 \\ \vdots \\ \lambda v_m \end{pmatrix} \in \mathbb{R}^m$ is a scalar multiple of v.
 
-![1 Scalar multiplication|600](media/1_Scalar_multiplication.png)
+<img src="media/1_Scalar_multiplication.png" alt="1 Scalar multiplication" width="600">
 
 ## Scalar Product
 
@@ -91,7 +91,7 @@
 > **Definition 1.11 (Euclidean norm).** Let $v \in \mathbb{R}^m$. The Euclidean norm of $v$ is the number
 > $||v|| := \sqrt{v \cdot v}$.
 
-![1 Euclidean Norm|600](media/1_Euclidean_Norm.png)
+<img src="media/1_Euclidean_Norm.png" alt="1 Euclidean Norm" width="600">
 
 - **Unit vector**: Vector with length 1 ($||u||=1$).
     - In $\mathbb{R}^2$, all unit vectors lie on the **unit circle**.
@@ -108,7 +108,7 @@
 > **Definition 1.14 (Angle).** Let $v, w \in \mathbb{R}^m$ be two nonzero vectors. The angle between them is the unique $\alpha$ between 0 and $\pi$ (180 degrees) such that
 > $\cos(\alpha) = \frac{v \cdot w}{||v|| ||w||} \in [-1, 1]$.
 
-![1 Angle|600](media/1_Angle.png)
+<img src="media/1_Angle.png" alt="1 Angle" width="600">
 
 - **Orthogonal** (perpendicular) vectors: Scalar product is 0 (**Definition 1.15**).
     - Corresponds to an angle of 90° ($\cos(90°) = 0$).
@@ -122,7 +122,7 @@
 > $H_d = \{ v \in \mathbb{R}^m : v \cdot d = 0 \}$
 > is called a hyperplane through the origin.
 
-![1 Hyperplane|600](media/1_Hyperplane.png)
+<img src="media/1_Hyperplane.png" alt="1 Hyperplane" width="600">
 
 ## Fundamental Inequalities
 

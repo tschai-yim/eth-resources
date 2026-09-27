@@ -39,7 +39,7 @@
         - **Did not take effect (Kein Effekt)**: Keine sichtbare Änderung $\rightarrow$ **verwerfen** (simuliert Thread-Absturz).
     - $G$ muss äquivalent zu einer **legalen sequenziellen Historie $S$** sein.
 - **Zwingende Bedingung (Echtzeitordnung)**: $\to_G \subset \to_S$
-  ![13a Echtzeitordnung|600](media/13a_Echtzeitordnung.png)
+  <img src="media/13a_Echtzeitordnung.png" alt="13a Echtzeitordnung" width="600">
     - $S$ respektiert die absolute **Echtzeitordnung** (Real-time order) von $G$ strikt (kein Umdrehen realer Abläufe).
 - **Linearisierungspunkte (Linearization Points)**:
     - Logischer Zeitpunkt, an dem der Effekt einer Methode für alle anderen Threads **global sichtbar** wird.
@@ -47,7 +47,7 @@
     - *Beispiel Lock-free*: Erfolgreicher `compareAndSet()` (CAS) oder `return null`.
     - **Essenzielle Regel**: Genau **eine atomare Instruktion** pro Ausführungspfad macht den Gesamteffekt sichtbar (garantiert Atomizität der Methode).
 - **Prüfungsrelevanz (Traces analysieren)**:
-  ![13a Linearisierbar|600](media/13a_Linearisierbar.png)
+  <img src="media/13a_Linearisierbar.png" alt="13a Linearisierbar" width="600">
     - Korrektheit via überlappenden Linien-Diagrammen bewerten.
     - *Wichtig*: Semantik der Datenstruktur beachten (z.B. bei FIFO-Queue muss Element zuerst raus, dessen `enqueue` in Echtzeit zuerst via Response **abgeschlossen** war).
 
@@ -63,7 +63,7 @@
 - **Motivation**: Linearisierbarkeit für Hardware/Caches zu teuer und ineffizient. Sequenzielle Konsistenz erlaubt Hardware-Optimierungen und modelliert Multiprozessor-Architekturen besser.
 - **Definition**: Historie $H$ ist sequenziell konsistent bei Äquivalenz zu einer legalen sequenziellen Historie $S$.
 - **Unterschied zur Linearisierbarkeit**:
-  ![13a Thread verschieben|600](media/13a_Thread_verschieben.png)
+  <img src="media/13a_Thread_verschieben.png" alt="13a Thread verschieben" width="600">
     - **Keine Echtzeitordnung** ($\to_G \subset \to_S$ entfällt).
     - Operationen **verschiedener Threads** auf Zeitachse gedanklich beliebig verschiebbar.
     - **Einschränkung**: Programmordnung (Program order) **innerhalb desselben Threads** bleibt zwingend erhalten (kein Vertauschen eigener Befehle).

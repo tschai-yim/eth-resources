@@ -11,12 +11,12 @@
     - **Physical frames**: Corresponding physical memory chunks.
     - *Concept*: Physical memory acts as a fully-associative cache for disk data.
 
-![2622 Virtual Memory Concept|400](media/2622_Virtual_Memory_Concept.png)
+<img src="media/2622_Virtual_Memory_Concept.png" alt="2622 Virtual Memory Concept" width="400">
 
 ## Address Translation
 
 - **Address Split**:
-  ![2622 Address Split|300](media/2622_Address_Split.png)
+  <img src="media/2622_Address_Split.png" alt="2622 Address Split" width="300">
     - **Virtual Address**: **Virtual Page Number (VPN)** + **Page Offset**.
     - **Physical Address**: **Physical Page Number (PPN)** + **Page Offset**.
     - **Crucial Rule**: **Page Offset** bits strictly *never change/translate*.
@@ -38,7 +38,7 @@
     - Unused VA ranges left unallocated, saving physical memory.
     - **Trade-off**: $N$ sequential memory accesses per translation (e.g., 4 accesses for 4 levels).
 
-![2622 Multi-Level Page Tables|600](media/2622_Multi-Level_Page_Tables.png)
+<img src="media/2622_Multi-Level_Page_Tables.png" alt="2622 Multi-Level Page Tables" width="600">
 
 ## Page Faults and Replacement
 
@@ -56,7 +56,7 @@
         - Replaces first frame with `R = 0`.
         - Clears `R` bit (`R -> 0`) during traversal ("second chance").
 
-![2622 Page Fault|600](media/2622_Page_Fault.png)
+<img src="media/2622_Page_Fault.png" alt="2622 Page Fault" width="600">
 
 ## Accelerating Translation (TLBs)
 
@@ -72,7 +72,7 @@
 - **Hardware Page Table Walker (PTW)**: Per-core hardware state machine resolving TLB misses transparently (no context switches).
 - **Page Walk Caches (PWC)**: Low-latency caches storing intermediate non-leaf page table pointers, drastically accelerating repetitive walks.
 
-![2622 Translation Hierarchy|500](media/2622_Translation_Hierarchy.png)
+<img src="media/2622_Translation_Hierarchy.png" alt="2622 Translation Hierarchy" width="500">
 
 ## Multiple Page Sizes
 
@@ -91,7 +91,7 @@
     - **Page Directory Entry (PDE)**: Protects all 1024 downstream pages simultaneously.
     - **Page Table Entry (PTE)**: Protects a single specific page.
 - **RowHammer Page Table Exploit**:
-  ![2622 RowHammer Exploit|200](media/2622_RowHammer_Exploit.png)
+  <img src="media/2622_RowHammer_Exploit.png" alt="2622 RowHammer Exploit" width="200">
     - Attack exploiting physical DRAM unreliability.
     - Rapid memory accesses (via `clflush`) induce bit flips in adjacent DRAM rows.
     - **Spraying**: Attacker heavily fills physical memory with own PTEs.

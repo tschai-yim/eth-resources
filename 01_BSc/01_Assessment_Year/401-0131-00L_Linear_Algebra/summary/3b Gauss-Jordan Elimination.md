@@ -16,7 +16,7 @@
     - The **rank** of the matrix is `r`, the number of pivots. [^3.14]
     - The **independent columns** are the pivot columns ($j_1, ..., j_r$). [^3.14]
 
-![3 RREF Example|300](media/3_RREF_Example.png)
+<img src="media/3_RREF_Example.png" alt="3 RREF Example" width="300">
 
 ## The Gauss-Jordan Algorithm
 
@@ -28,7 +28,7 @@
 - **Direct Solution (for Rx=c)**:
     - **Consistency**: No solution exists if $c_i \neq 0$ for any all-zero row $i$ in $R$.
     - **Canonical Solution**: A standard solution is found by setting $x_{j_i} = c_i$ for each pivot column $j_i$ and all other variables to 0.
-    ![3 Gauss-Jordan Direct Solution|600](media/3_Gauss-Jordan_Direct_Solution.png)
+    <img src="media/3_Gauss-Jordan_Direct_Solution.png" alt="3 Gauss-Jordan Direct Solution" width="600">
 - **Runtime**:
     - **Elimination**: For an $m \times n$ matrix $A$ and $m$ right-hand sides, the cost is $O(m^2(m+n))$. [^3.16]
     - **Direct Solution**: Solving $Rx=c$ takes $O(m+n)$. [^3.15]

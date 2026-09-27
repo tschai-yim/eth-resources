@@ -17,16 +17,16 @@
     - **Contamination Delay ($t_{cd}$)**: *Shortest* time from input change to output *start* of change (minimum delay). Forms the **Short Path**.
     - **Propagation Delay ($t_{pd}$)**: *Longest* time from input change to output *finish* of change (maximum delay). Forms the **Critical Path**.
 - **Glitches**:
-  ![2610b Glitch|300](media/2610b_Glitch.png)
+  <img src="media/2610b_Glitch.png" alt="2610b Glitch" width="300">
     - **Definition**: Single input transition causes multiple erratic output transitions.
     - **Cause**: Differing parallel path delays (e.g., a "fast path" and "slow path" reaching the same gate).
     - **Fix**: Add a **consensus term** (redundant logic gate) $\rightarrow$ provides a steady parallel path to hold the output stable during the problematic input transition.
-      ![2610b Glitch Fix|400](media/2610b_Glitch_Fix.png)
+      <img src="media/2610b_Glitch_Fix.png" alt="2610b Glitch Fix" width="400">
     - **When to care**: Often ignored in synchronous systems if settling occurs well before the clock edge (saves chip area/power).
 
 ## Sequential Circuit Timing
 
-![2610b D Flip-Flop Timing|400](media/2610b_D_Flip-Flop_Timing.png)
+<img src="media/2610b_D_Flip-Flop_Timing.png" alt="2610b D Flip-Flop Timing" width="400">
 
 - **D Flip-Flop Input Constraints**:
     - **Setup Time ($t_{setup}$)**: Time *before* clock edge data ($D$) must be completely stable.
@@ -53,4 +53,4 @@
     - **Skew Hold Constraint**: $t_{ccq} + t_{cd} > t_{hold} + t_{skew}$
 - **Management**: Mitigated via intelligent **clock networks/meshes** (equalizes wire lengths).
 
-![2610b Clock Skew|500](media/2610b_Clock_Skew.png)
+<img src="media/2610b_Clock_Skew.png" alt="2610b Clock Skew" width="500">

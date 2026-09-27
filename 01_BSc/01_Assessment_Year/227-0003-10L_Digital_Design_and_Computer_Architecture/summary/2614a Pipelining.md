@@ -2,7 +2,7 @@
 
 - **Definition**: Execution paradigm overlapping multiple instructions to increase overall system **throughput**.
 - **The Laundry Analogy**:
-	  ![2614 Laundry Pipeline|500](media/2614_Laundry_Pipeline.png)
+	  <img src="media/2614_Laundry_Pipeline.png" alt="2614 Laundry Pipeline" width="500">
     - Steps (e.g., wash $\rightarrow$ dry $\rightarrow$ fold) sequentially dependent per load.
     - No dependence between *independent* loads.
     - Simultaneous use of different resources.
@@ -33,7 +33,7 @@
     - **Option 1 (Typical)**: Decode once in `ID` stage; propagate control signals down pipeline.
     - **Option 2**: Propagate raw instruction word; decode locally per stage.
 
-![2614a MIPS Pipeline|700](media/2614a_MIPS_Pipeline.png)
+<img src="media/2614a_MIPS_Pipeline.png" alt="2614a MIPS Pipeline" width="700">
 
 ## Pipeline Hazards
 

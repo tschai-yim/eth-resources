@@ -14,12 +14,12 @@
 ## Basic Storage Elements
 
 - **Cross-Coupled Inverters**: Fundamental bistable circuit.
-	![2609a Cross-Coupled Inverters|400](media/2609a_Cross-Coupled_Inverters.png)
+	<img src="media/2609a_Cross-Coupled_Inverters.png" alt="2609a Cross-Coupled Inverters" width="400">
     - **Two stable states**: $Q=1$ or $Q=0$.
     - **Metastable state** (undesirable): Outputs oscillate between $0$ and $1$.
     - No built-in control mechanism to set $Q$.
 - **The R-S Latch (Reset-Set)**: Built via **cross-coupled NAND gates**.
-  ![2609a R-S-Latch|300](media/2609a_R-S-Latch.png)
+  <img src="media/2609a_R-S-Latch.png" alt="2609a R-S-Latch" width="300">
     - **Storage**: Data at $Q$, inverse at $Q'$.
     - **Operation** (via control inputs **S** and **R**):
         - **Quiescent (idle)**: $S=1, R=1$.
@@ -29,7 +29,7 @@
         - Both $Q$ and $Q'$ settle to $1$ (violates $Q \neq Q'$ invariant).
         - Simultaneous return to $1$ triggers **metastability** (random oscillation before settling).
 - **The Gated D Latch**: Prevents the $S=0, R=0$ forbidden state.
-  ![2609a Gated D Latch|500](media/2609a_Gated_D_Latch.png)
+  <img src="media/2609a_Gated_D_Latch.png" alt="2609a Gated D Latch" width="500">
     - **Architecture**: Adds two front-end NAND gates to the R-S Latch.
     - **Inputs**: **Data (D)** and **Write Enable (WE)**.
     - $WE = 1$: $Q$ takes value of $D$.
@@ -38,7 +38,7 @@
 ## Registers and Memory Arrays
 
 - **Register**: Multi-bit data storage (e.g., $4$-bit array $Q[3:0]$).
-  ![2609a Register|300](media/2609a_Register.png)
+  <img src="media/2609a_Register.png" alt="2609a Register" width="300">
     - Uses multiple parallel **D latches**.
     - **Single WE signal** for simultaneous bit writes.
 - **Memory Terminology**:
@@ -47,7 +47,7 @@
     - **Address Space**: Total unique memory locations.
     - Example: $4$ locations require $\log_2(4) = 2$ address bits.
 
-![2609a Memory Array|600](media/2609a_Memory_Array.png)
+<img src="media/2609a_Memory_Array.png" alt="2609a Memory Array" width="600">
 
 - **Memory Structure**: Grid/matrix layout of storage elements.
     - **Rows**: Represent unique addresses (activated via **Wordlines**).
@@ -69,7 +69,7 @@
     - **Stored data**: Pre-calculated logic outputs.
 - **Applications**: Core building blocks of **FPGAs** (Field Programmable Gate Arrays) for programmable/reconfigurable logic.
 
-![2609a Memory-based Lookup Table|500](media/2609a_Memory-based_Lookup_Table.png)
+<img src="media/2609a_Memory-based_Lookup_Table.png" alt="2609a Memory-based Lookup Table" width="500">
 
 ## Concept of Synchrony
 
@@ -79,20 +79,20 @@
 - **Synchronous Machines**:
     - **Behavior**: State transitions strictly at fixed, discrete time intervals.
     - **Clock**: Synchronizing signal alternating between $0$ and $1$.
-      ![2609a Clock Signal|500](media/2609a_Clock_Signal.png)
+      <img src="media/2609a_Clock_Signal.png" alt="2609a Clock Signal" width="500">
     - **Critical Timing Constraint**: **Combinational logic delay** < **clock cycle time**.
 
 ## The Transparency Problem & D Flip-Flops
 
 - **The Problem with Latches**: **Gated D Latch** fails as a standalone state register.
-  ![2609a Transparent Latch|500](media/2609a_Transparent_Latch.png)
+  <img src="media/2609a_Transparent_Latch.png" alt="2609a Transparent Latch" width="500">
     - **Transparency**: High clock (Write Enable = $1$) continuously propagates inputs ($D$) to outputs ($Q$).
     - Captures intermediate logic glitches mid-cycle (violates strict synchronous boundaries).
 - **Triggering Types**:
     - **Level-Triggered** (Latches): Continually captures data while clock is active.
     - **Edge-Triggered** (Flip-Flops): Captures data strictly at the clock transition.
 - **The D Flip-Flop**: Edge-triggered storage element solving transparency.
-  ![2609a D Flip-Flop Symbols|200](media/2609a_D_Flip-Flop_Symbols.png)![2609a D Flip-Flop Implementation|00](media/2609a_D_Flip-Flop_Implementation.png)
+  <img src="media/2609a_D_Flip-Flop_Symbols.png" alt="2609a D Flip-Flop Symbols" width="200"><img src="media/2609a_D_Flip-Flop_Implementation.png" alt="2609a D Flip-Flop Implementation" width="00">
     - **Construction**: Two series-connected **Gated D Latches** (first with inverted clock, second with normal clock).
     - **Operation**:
         - Clock low ($0$): First latch accepts $D$, second latch holds $Q$.

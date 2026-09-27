@@ -9,12 +9,12 @@
         - **Collisions**: Imperfect functions require linked lists; degrades performance.
         - **Space constraints**: High memory allocation needed to minimize collisions.
 - **Binary Search Trees**:
-  ![04 Binary Search Tree|400](media/04_Binary_Search_Tree.png)
+  <img src="media/04_Binary_Search_Tree.png" alt="04 Binary Search Tree" width="400">
     - Left branch strictly lower, right strictly greater.
     - Lookup time is **$O(\log n)$**.
     - **Disk Limitation**: Reads too little data per node; highly inefficient for disk blocks (e.g., 4KB).
 - **B+-trees** (Standard Relational Database Tree):
-  ![04 B+-Trees|500](media/04_B+-Trees.png)
+  <img src="media/04_B+-Trees.png" alt="04 B+-Trees" width="500">
     - **Structure**:
         - **Postings lists only on leaves**: Internal nodes act purely as routing pivots.
         - **Leaves at the same depth**: Ensures balanced lookup times.
@@ -54,7 +54,7 @@
     - Rotate query until `*` is at the end (e.g., `pl*t` $\rightarrow$ `pl*t$` $\rightarrow$ `t$pl*`).
     - Execute standard trailing wildcard lookup.
 
-![04 Permuterm Index|500](media/04_Permuterm_Index.png)
+<img src="media/04_Permuterm_Index.png" alt="04 Permuterm Index" width="500">
 
 ### K-gram Indexes
 
@@ -66,7 +66,7 @@
     - Intersect postings.
     - **Must Post-filter**: Matches terms like `computer` but also `copter`.
 
-![04 k-gram|500](media/04_k-gram.png)
+<img src="media/04_k-gram.png" alt="04 k-gram" width="500">
 
 ## Spelling Correction
 
@@ -91,7 +91,7 @@
 
 - **Assumption**: Terms with small edit distance share **many k-grams**.
 - **Jaccard Coefficient**:
-  ![04 Jaccard Coefficient|400](media/04_Jaccard_Coefficient.png)
+  <img src="media/04_Jaccard_Coefficient.png" alt="04 Jaccard Coefficient" width="400">
     - Measures set overlap: $|A \cap B| / |A \cup B|$. Range: $0$ to $1$.
 - **Updated Search Method**:
     1. Extract k-grams from query.
@@ -126,4 +126,4 @@
 - **Phonetic Matching**: Identical fingerprints (e.g., `Computer` & `Cmputer` $\rightarrow$ `C513`) are phonetic matches.
 - **Limitation**: Fails completely if the spelling mistake is on the **first letter**.
 
-![04 Soundex|500](media/04_Soundex.png)
+<img src="media/04_Soundex.png" alt="04 Soundex" width="500">
