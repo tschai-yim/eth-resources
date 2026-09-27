@@ -1,0 +1,11 @@
+- Replaces imprecise "dot notations" ($v_1, ..., v_n$) with formal definitions.
+- **Sequences**:
+    - Notation: $(x_j)_{j=1}^n$.
+    - Meaning: An ordered list of elements where order and duplicates matter.
+- **Sums**:
+    - Notation: $\sum_{j=1}^n x_j$ (uses a **summation index** $j$).
+    - Precisely handles all cases, including $n=1$ and $n=0$.
+    - **Empty Sum ($n=0$)**: The sum over an empty range is defined as the additive identity, which is **0** for numbers and the **zero vector** for vectors.
+- **Sets**:
+    - Notation: $\{x_j : j \in [n]\}$ (read: "the set of all $x_j$ for which $j$ is in the range 1 to n").
+    - Meaning: An unordered collection where order and duplicates do not matter (e.g., $\{x_1, x_2, x_1\} = \{x_1, x_2\}$).
